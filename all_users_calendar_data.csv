@@ -1,0 +1,289 @@
+user_id,user_display_name,event_subject,event_start,event_end,event_location,event_organizer
+73b314be-4b71-4509-82c7-e586424e4ef6,AIBOS Water,江坂　10〜みおつくし訪問　18時まで研究室　18-20面接(稼働不可),2024-05-13T00:00:00.0000000,2024-05-14T00:00:00.0000000,,AIBOS Water
+73b314be-4b71-4509-82c7-e586424e4ef6,AIBOS Water,江坂　19時から出勤,2024-04-26T00:00:00.0000000,2024-04-27T00:00:00.0000000,,AIBOS Water
+73b314be-4b71-4509-82c7-e586424e4ef6,AIBOS Water,AIBOS様　打ち合わせ,2024-04-24T07:00:00.0000000,2024-04-24T08:00:00.0000000,Microsoft Teams 会議; 応接室,川井 晴至
+73b314be-4b71-4509-82c7-e586424e4ef6,AIBOS Water,稲葉 漫画 対応不可,2024-04-20T00:00:00.0000000,2024-04-27T00:00:00.0000000,,AIBOS Water
+b51448d2-ffad-4259-8803-a2adb50ee6e3,安東 星琉 / Seiryu Ando,2024-05-31 画像解析システム打ち合わせ,2024-05-31T08:00:00.0000000,2024-05-31T09:00:00.0000000,Microsoft Teams Meeting,森 志人 / Yukito Mori
+b51448d2-ffad-4259-8803-a2adb50ee6e3,安東 星琉 / Seiryu Ando,東京会合打ち合わせ,2024-05-30T13:30:00.0000000,2024-05-30T14:00:00.0000000,Microsoft Teams Meeting,カバレッジ部門
+b51448d2-ffad-4259-8803-a2adb50ee6e3,安東 星琉 / Seiryu Ando,2024-05-30 第１回株式会社設立勉強会,2024-05-30T11:00:00.0000000,2024-05-30T12:00:00.0000000,Microsoft Teams Meeting,株式会社設立勉強会
+b51448d2-ffad-4259-8803-a2adb50ee6e3,安東 星琉 / Seiryu Ando,みおつくしPJ第八回MTG,2024-05-30T10:00:00.0000000,2024-05-30T11:00:00.0000000,Microsoft Teams Meeting,Shared_みおつくし
+b51448d2-ffad-4259-8803-a2adb50ee6e3,安東 星琉 / Seiryu Ando,2024-05-28 広報戦略部 HP会議,2024-05-28T10:00:00.0000000,2024-05-28T11:00:00.0000000,Microsoft Teams Meeting,広報戦略部
+b51448d2-ffad-4259-8803-a2adb50ee6e3,安東 星琉 / Seiryu Ando,Canceled: 2024-05-28 広報戦略部 HP会議,2024-05-28T10:00:00.0000000,2024-05-28T10:30:00.0000000,Microsoft Teams Meeting,永淵 翔大 / Shota Nagafuchi
+b51448d2-ffad-4259-8803-a2adb50ee6e3,安東 星琉 / Seiryu Ando,安東 15:00~22:00　京都事務所,2024-05-31T00:00:00.0000000,2024-06-01T00:00:00.0000000,,安東 星琉 / Seiryu Ando
+b51448d2-ffad-4259-8803-a2adb50ee6e3,安東 星琉 / Seiryu Ando,安東 15:00-20:00　研究室,2024-05-30T00:00:00.0000000,2024-05-31T00:00:00.0000000,,安東 星琉 / Seiryu Ando
+b51448d2-ffad-4259-8803-a2adb50ee6e3,安東 星琉 / Seiryu Ando,安東 10:30-19:00 研究室,2024-05-27T00:00:00.0000000,2024-05-28T00:00:00.0000000,,安東 星琉 / Seiryu Ando
+b51448d2-ffad-4259-8803-a2adb50ee6e3,安東 星琉 / Seiryu Ando,第5回 カバレッジ部門総会,2024-05-23T11:30:00.0000000,2024-05-23T12:30:00.0000000,Microsoft Teams Meeting,カバレッジ部門
+10c076c2-2325-4ae1-a174-b29eb5d3eeb1,崔 文碩 / Moonsurk Choi,崔 13:00-17:00 リモート (技術開発),2024-06-09T00:00:00.0000000,2024-06-10T00:00:00.0000000,,崔 文碩 / Moonsurk Choi
+10c076c2-2325-4ae1-a174-b29eb5d3eeb1,崔 文碩 / Moonsurk Choi,崔 15:00-20:00 オフィス (技術開発),2024-06-05T00:00:00.0000000,2024-06-06T00:00:00.0000000,,崔 文碩 / Moonsurk Choi
+10c076c2-2325-4ae1-a174-b29eb5d3eeb1,崔 文碩 / Moonsurk Choi,崔 休み,2024-05-30T00:00:00.0000000,2024-05-31T00:00:00.0000000,,崔 文碩 / Moonsurk Choi
+10c076c2-2325-4ae1-a174-b29eb5d3eeb1,崔 文碩 / Moonsurk Choi,崔 17:00-20:00 オフィス [技術開発],2024-06-10T00:00:00.0000000,2024-06-11T00:00:00.0000000,,崔 文碩 / Moonsurk Choi
+10c076c2-2325-4ae1-a174-b29eb5d3eeb1,崔 文碩 / Moonsurk Choi,崔 19:00-21:00 オフィス [技術開発],2024-06-03T00:00:00.0000000,2024-06-04T00:00:00.0000000,,崔 文碩 / Moonsurk Choi
+10c076c2-2325-4ae1-a174-b29eb5d3eeb1,崔 文碩 / Moonsurk Choi,崔 終日 休み,2024-05-27T00:00:00.0000000,2024-05-28T00:00:00.0000000,,崔 文碩 / Moonsurk Choi
+10c076c2-2325-4ae1-a174-b29eb5d3eeb1,崔 文碩 / Moonsurk Choi,崔 16:00-20:00 オフィス (技術開発),2024-05-31T00:00:00.0000000,2024-06-01T00:00:00.0000000,,崔 文碩 / Moonsurk Choi
+10c076c2-2325-4ae1-a174-b29eb5d3eeb1,崔 文碩 / Moonsurk Choi,崔 終日 休み,2024-05-20T00:00:00.0000000,2024-05-21T00:00:00.0000000,,崔 文碩 / Moonsurk Choi
+10c076c2-2325-4ae1-a174-b29eb5d3eeb1,崔 文碩 / Moonsurk Choi,崔 終日 休み,2024-05-19T00:00:00.0000000,2024-05-20T00:00:00.0000000,,崔 文碩 / Moonsurk Choi
+10c076c2-2325-4ae1-a174-b29eb5d3eeb1,崔 文碩 / Moonsurk Choi,崔 15:00-20:00 オフィス (技術開発),2024-05-29T00:00:00.0000000,2024-05-30T00:00:00.0000000,,崔 文碩 / Moonsurk Choi
+3be702e4-27ad-4eab-a02b-88f2672e6af4,江坂 裕貴 / Hiroki Ezaka,江坂 終日休み,2024-06-02T00:00:00.0000000,2024-06-03T00:00:00.0000000,,江坂 裕貴 / Hiroki Ezaka
+3be702e4-27ad-4eab-a02b-88f2672e6af4,江坂 裕貴 / Hiroki Ezaka,江坂 終日休み,2024-06-01T00:00:00.0000000,2024-06-02T00:00:00.0000000,,江坂 裕貴 / Hiroki Ezaka
+3be702e4-27ad-4eab-a02b-88f2672e6af4,江坂 裕貴 / Hiroki Ezaka,江坂 オンライン,2024-05-31T00:00:00.0000000,2024-06-01T00:00:00.0000000,,江坂 裕貴 / Hiroki Ezaka
+3be702e4-27ad-4eab-a02b-88f2672e6af4,江坂 裕貴 / Hiroki Ezaka,江坂 １９時からオフィス出勤,2024-05-30T00:00:00.0000000,2024-05-31T00:00:00.0000000,,江坂 裕貴 / Hiroki Ezaka
+3be702e4-27ad-4eab-a02b-88f2672e6af4,江坂 裕貴 / Hiroki Ezaka,江坂 終日オンライン,2024-05-29T00:00:00.0000000,2024-05-30T00:00:00.0000000,,江坂 裕貴 / Hiroki Ezaka
+3be702e4-27ad-4eab-a02b-88f2672e6af4,江坂 裕貴 / Hiroki Ezaka,みおつくしPJ第八回MTG,2024-05-30T10:00:00.0000000,2024-05-30T11:00:00.0000000,Microsoft Teams Meeting,Shared_みおつくし
+3be702e4-27ad-4eab-a02b-88f2672e6af4,江坂 裕貴 / Hiroki Ezaka,2024-05-28 広報戦略部 HP会議,2024-05-28T10:00:00.0000000,2024-05-28T11:00:00.0000000,Microsoft Teams Meeting,広報戦略部
+3be702e4-27ad-4eab-a02b-88f2672e6af4,江坂 裕貴 / Hiroki Ezaka,Canceled: 2024-05-28 広報戦略部 HP会議,2024-05-28T10:00:00.0000000,2024-05-28T10:30:00.0000000,Microsoft Teams Meeting,永淵 翔大 / Shota Nagafuchi
+3be702e4-27ad-4eab-a02b-88f2672e6af4,江坂 裕貴 / Hiroki Ezaka,第5回 カバレッジ部門総会,2024-05-23T11:30:00.0000000,2024-05-23T12:30:00.0000000,Microsoft Teams Meeting,カバレッジ部門
+3be702e4-27ad-4eab-a02b-88f2672e6af4,江坂 裕貴 / Hiroki Ezaka,みおつくしPJ第七回MTG,2024-05-23T10:00:00.0000000,2024-05-23T11:00:00.0000000,Microsoft Teams Meeting,Shared_みおつくし
+532e3b53-ab4e-406a-9148-11996307cd8f,稲葉 皓信 / Terunobu Inaba,2024-05-30 第１回株式会社設立勉強会,2024-05-30T11:00:00.0000000,2024-05-30T12:00:00.0000000,Microsoft Teams Meeting,株式会社設立勉強会
+532e3b53-ab4e-406a-9148-11996307cd8f,稲葉 皓信 / Terunobu Inaba,2024-05-28 総務部 業務整理MTG,2024-05-28T11:00:00.0000000,2024-05-28T12:30:00.0000000,Microsoft Teams Meeting,総務部 本部
+532e3b53-ab4e-406a-9148-11996307cd8f,稲葉 皓信 / Terunobu Inaba,2024-05-28 広報戦略部 HP会議,2024-05-28T10:00:00.0000000,2024-05-28T11:00:00.0000000,Microsoft Teams Meeting,広報戦略部
+532e3b53-ab4e-406a-9148-11996307cd8f,稲葉 皓信 / Terunobu Inaba,Canceled: 2024-05-28 広報戦略部 HP会議,2024-05-28T10:00:00.0000000,2024-05-28T10:30:00.0000000,Microsoft Teams Meeting,永淵 翔大 / Shota Nagafuchi
+532e3b53-ab4e-406a-9148-11996307cd8f,稲葉 皓信 / Terunobu Inaba,2024-05-29 Teams & Notion台帳作成会議,2024-05-29T00:00:00.0000000,2024-05-29T01:00:00.0000000,Microsoft Teams Meeting,情報インフラ部 京都支部
+532e3b53-ab4e-406a-9148-11996307cd8f,稲葉 皓信 / Terunobu Inaba,2024-05-29 Teams台帳作成会議,2024-05-29T08:00:00.0000000,2024-05-29T09:00:00.0000000,Microsoft Teams Meeting,情報インフラ部 京都支部
+532e3b53-ab4e-406a-9148-11996307cd8f,稲葉 皓信 / Terunobu Inaba,稲葉 休み,2024-06-01T00:00:00.0000000,2024-06-02T00:00:00.0000000,,稲葉 皓信 / Terunobu Inaba
+532e3b53-ab4e-406a-9148-11996307cd8f,稲葉 皓信 / Terunobu Inaba,稲葉 13:00-22:00 東京事務所（総務）,2024-05-31T00:00:00.0000000,2024-06-01T00:00:00.0000000,,稲葉 皓信 / Terunobu Inaba
+532e3b53-ab4e-406a-9148-11996307cd8f,稲葉 皓信 / Terunobu Inaba,稲葉 13:00-22:00 東京事務所（東京新規採用）,2024-05-30T00:00:00.0000000,2024-05-31T00:00:00.0000000,,稲葉 皓信 / Terunobu Inaba
+532e3b53-ab4e-406a-9148-11996307cd8f,稲葉 皓信 / Terunobu Inaba,稲葉 9:00-18:00 京都事務所（総務・情報インフラ）,2024-05-29T00:00:00.0000000,2024-05-30T00:00:00.0000000,,稲葉 皓信 / Terunobu Inaba
+9aa5f8f5-3e6a-4d85-9dcf-a9ce4cec6a94,影山 稜真 / Ryoma Kageyama,Reeact Leafletの説明,2024-06-03T06:00:00.0000000,2024-06-03T07:30:00.0000000,Microsoft Teams Meeting,川添 悠義 / Haruyoshi Kawazoe
+9aa5f8f5-3e6a-4d85-9dcf-a9ce4cec6a94,影山 稜真 / Ryoma Kageyama,影山　終日休み,2024-05-22T00:00:00.0000000,2024-05-23T00:00:00.0000000,Microsoft Teams Meeting,影山 稜真 / Ryoma Kageyama
+9aa5f8f5-3e6a-4d85-9dcf-a9ce4cec6a94,影山 稜真 / Ryoma Kageyama,影山 16:45-18:15 オフィス typescript,2024-05-23T00:00:00.0000000,2024-05-24T00:00:00.0000000,Microsoft Teams Meeting,影山 稜真 / Ryoma Kageyama
+9aa5f8f5-3e6a-4d85-9dcf-a9ce4cec6a94,影山 稜真 / Ryoma Kageyama,TypeScript学習会,2024-05-23T07:45:00.0000000,2024-05-23T09:45:00.0000000,Microsoft Teams Meeting,影山 稜真 / Ryoma Kageyama
+9aa5f8f5-3e6a-4d85-9dcf-a9ce4cec6a94,影山 稜真 / Ryoma Kageyama,影山 13:00-16:00 オフィス,2024-05-21T00:00:00.0000000,2024-05-22T00:00:00.0000000,,影山 稜真 / Ryoma Kageyama
+9aa5f8f5-3e6a-4d85-9dcf-a9ce4cec6a94,影山 稜真 / Ryoma Kageyama,影山 15:30-17:00 オフィス,2024-05-20T00:00:00.0000000,2024-05-21T00:00:00.0000000,,影山 稜真 / Ryoma Kageyama
+28f952ef-7b6d-4461-8a89-f869999fa7db,金野 純卓 / Yoshitaka Kaneno,高林さん採用面接,2024-05-30T04:00:00.0000000,2024-05-30T06:00:00.0000000,Microsoft Teams Meeting,OB会
+28f952ef-7b6d-4461-8a89-f869999fa7db,金野 純卓 / Yoshitaka Kaneno,2024-05-28 総務部 業務整理MTG,2024-05-28T11:00:00.0000000,2024-05-28T12:30:00.0000000,Microsoft Teams Meeting,総務部 本部
+28f952ef-7b6d-4461-8a89-f869999fa7db,金野 純卓 / Yoshitaka Kaneno,【OB定例会議】4/20京都1DAY合宿議論内容資料のRV&7.1に向けた残論点整理について,2024-05-22T13:00:00.0000000,2024-05-22T15:00:00.0000000,Microsoft Teams Meeting,松本 尚大 / Naohiro Matsumoto
+28f952ef-7b6d-4461-8a89-f869999fa7db,金野 純卓 / Yoshitaka Kaneno,Canceled: 総務部 業務整理MTG,2024-05-28T11:00:00.0000000,2024-05-28T12:30:00.0000000,Microsoft Teams Meeting,稲葉 皓信 / Terunobu Inaba
+28f952ef-7b6d-4461-8a89-f869999fa7db,金野 純卓 / Yoshitaka Kaneno,2024-05-21 総務部 業務整理ミーティング,2024-05-21T11:00:00.0000000,2024-05-21T12:30:00.0000000,Microsoft Teams Meeting,総務部 東京支部
+0757ef59-e454-4ce8-b8be-09bd42d13ef5,川崎 怜奈 / Rena Kawasaki,川﨑 全日 休み,2024-06-04T00:00:00.0000000,2024-06-05T00:00:00.0000000,,川崎 怜奈 / Rena Kawasaki
+0757ef59-e454-4ce8-b8be-09bd42d13ef5,川崎 怜奈 / Rena Kawasaki,川﨑 15:00-17:30 出社勤務,2024-06-06T00:00:00.0000000,2024-06-07T00:00:00.0000000,,川崎 怜奈 / Rena Kawasaki
+0757ef59-e454-4ce8-b8be-09bd42d13ef5,川崎 怜奈 / Rena Kawasaki,川﨑 14:00-17:30 出社勤務,2024-06-05T00:00:00.0000000,2024-06-06T00:00:00.0000000,,川崎 怜奈 / Rena Kawasaki
+0757ef59-e454-4ce8-b8be-09bd42d13ef5,川崎 怜奈 / Rena Kawasaki,川﨑 16:00-19:00 出社勤務,2024-06-03T00:00:00.0000000,2024-06-04T00:00:00.0000000,,川崎 怜奈 / Rena Kawasaki
+0757ef59-e454-4ce8-b8be-09bd42d13ef5,川崎 怜奈 / Rena Kawasaki,第1回 管清工業チームMTG,2024-05-30T07:00:00.0000000,2024-05-30T08:00:00.0000000,Microsoft Teams Meeting,Shared_管清工業
+0757ef59-e454-4ce8-b8be-09bd42d13ef5,川崎 怜奈 / Rena Kawasaki,川﨑 出社勤務 15:00-17:00,2024-05-30T00:00:00.0000000,2024-05-31T00:00:00.0000000,,川崎 怜奈 / Rena Kawasaki
+0757ef59-e454-4ce8-b8be-09bd42d13ef5,川崎 怜奈 / Rena Kawasaki,川﨑 全日 休み,2024-05-31T00:00:00.0000000,2024-06-01T00:00:00.0000000,,川崎 怜奈 / Rena Kawasaki
+0757ef59-e454-4ce8-b8be-09bd42d13ef5,川崎 怜奈 / Rena Kawasaki,川﨑 出社勤務 13:00-15:00,2024-05-29T00:00:00.0000000,2024-05-30T00:00:00.0000000,,川崎 怜奈 / Rena Kawasaki
+0757ef59-e454-4ce8-b8be-09bd42d13ef5,川崎 怜奈 / Rena Kawasaki,川﨑 出社勤務 14:30-19:00,2024-05-28T00:00:00.0000000,2024-05-29T00:00:00.0000000,,川崎 怜奈 / Rena Kawasaki
+0757ef59-e454-4ce8-b8be-09bd42d13ef5,川崎 怜奈 / Rena Kawasaki,川﨑 出社勤務 14:00-17:00,2024-05-27T00:00:00.0000000,2024-05-28T00:00:00.0000000,,川崎 怜奈 / Rena Kawasaki
+18c69ff7-3596-44e0-8a82-76c8faf49976,川添 悠義 / Haruyoshi Kawazoe,みおつくしPJ第八回MTG,2024-05-30T10:00:00.0000000,2024-05-30T11:00:00.0000000,Microsoft Teams Meeting,Shared_みおつくし
+18c69ff7-3596-44e0-8a82-76c8faf49976,川添 悠義 / Haruyoshi Kawazoe,Reeact Leafletの説明,2024-06-03T06:00:00.0000000,2024-06-03T07:30:00.0000000,Microsoft Teams Meeting,川添 悠義 / Haruyoshi Kawazoe
+18c69ff7-3596-44e0-8a82-76c8faf49976,川添 悠義 / Haruyoshi Kawazoe,2024-05-29 Teams台帳作成会議,2024-05-29T08:00:00.0000000,2024-05-29T09:00:00.0000000,Microsoft Teams Meeting,情報インフラ部 京都支部
+18c69ff7-3596-44e0-8a82-76c8faf49976,川添 悠義 / Haruyoshi Kawazoe,みおつくしPJ第七回MTG,2024-05-23T10:00:00.0000000,2024-05-23T11:00:00.0000000,Microsoft Teams Meeting,Shared_みおつくし
+18c69ff7-3596-44e0-8a82-76c8faf49976,川添 悠義 / Haruyoshi Kawazoe,TypeScript学習会,2024-05-23T07:45:00.0000000,2024-05-23T09:45:00.0000000,Microsoft Teams Meeting,影山 稜真 / Ryoma Kageyama
+18c69ff7-3596-44e0-8a82-76c8faf49976,川添 悠義 / Haruyoshi Kawazoe,川添 終日 休み,2024-05-26T00:00:00.0000000,2024-05-27T00:00:00.0000000,Microsoft Teams Meeting,川添 悠義 / Haruyoshi Kawazoe
+18c69ff7-3596-44e0-8a82-76c8faf49976,川添 悠義 / Haruyoshi Kawazoe,Teams台帳作成会議,2024-05-21T08:00:00.0000000,2024-05-21T10:00:00.0000000,Microsoft Teams Meeting,情報インフラ部 京都支部
+18c69ff7-3596-44e0-8a82-76c8faf49976,川添 悠義 / Haruyoshi Kawazoe,四日市水道局会議,2024-05-21T10:00:00.0000000,2024-05-21T11:00:00.0000000,Microsoft Teams Meeting,四日市市水道局
+18c69ff7-3596-44e0-8a82-76c8faf49976,川添 悠義 / Haruyoshi Kawazoe,情報インフラ部 定例会議,2024-05-27T09:30:00.0000000,2024-05-27T10:30:00.0000000,Microsoft Teams Meeting,情報インフラ部 京都支部
+18c69ff7-3596-44e0-8a82-76c8faf49976,川添 悠義 / Haruyoshi Kawazoe,川添 15:00-17:00 オフィス (TSSパワポ作成),2024-05-24T00:00:00.0000000,2024-05-25T00:00:00.0000000,Microsoft Teams Meeting,川添 悠義 / Haruyoshi Kawazoe
+132c88fa-55f7-4888-bca1-05ef56c6005c,向後 拓真 / Takuma Kogo,向後 終日 稼働不可,2024-05-30T00:00:00.0000000,2024-05-31T00:00:00.0000000,,向後 拓真 / Takuma Kogo
+132c88fa-55f7-4888-bca1-05ef56c6005c,向後 拓真 / Takuma Kogo,向後 終日 稼働不可,2024-05-29T00:00:00.0000000,2024-05-30T00:00:00.0000000,,向後 拓真 / Takuma Kogo
+132c88fa-55f7-4888-bca1-05ef56c6005c,向後 拓真 / Takuma Kogo,向後 17:00~19:00 オフィス TSS技術回,2024-05-28T00:00:00.0000000,2024-05-29T00:00:00.0000000,,向後 拓真 / Takuma Kogo
+132c88fa-55f7-4888-bca1-05ef56c6005c,向後 拓真 / Takuma Kogo,向後 18:00~20:00 オフィス 情報システム会議,2024-05-27T00:00:00.0000000,2024-05-28T00:00:00.0000000,,向後 拓真 / Takuma Kogo
+132c88fa-55f7-4888-bca1-05ef56c6005c,向後 拓真 / Takuma Kogo,向後 全日 稼働不可,2024-05-23T00:00:00.0000000,2024-05-24T00:00:00.0000000,,向後 拓真 / Takuma Kogo
+132c88fa-55f7-4888-bca1-05ef56c6005c,向後 拓真 / Takuma Kogo,向後 全日 稼働不可,2024-05-24T00:00:00.0000000,2024-05-25T00:00:00.0000000,,向後 拓真 / Takuma Kogo
+132c88fa-55f7-4888-bca1-05ef56c6005c,向後 拓真 / Takuma Kogo,向後 全日 稼働不可,2024-05-25T00:00:00.0000000,2024-05-26T00:00:00.0000000,,向後 拓真 / Takuma Kogo
+132c88fa-55f7-4888-bca1-05ef56c6005c,向後 拓真 / Takuma Kogo,向後 全日 稼働不可,2024-05-26T00:00:00.0000000,2024-05-27T00:00:00.0000000,,向後 拓真 / Takuma Kogo
+132c88fa-55f7-4888-bca1-05ef56c6005c,向後 拓真 / Takuma Kogo,向後 終日 出社不可(就活),2024-05-22T00:00:00.0000000,2024-05-23T00:00:00.0000000,,向後 拓真 / Takuma Kogo
+132c88fa-55f7-4888-bca1-05ef56c6005c,向後 拓真 / Takuma Kogo,向後 終日 出社不可(就活),2024-05-21T00:00:00.0000000,2024-05-22T00:00:00.0000000,,向後 拓真 / Takuma Kogo
+e9c84a00-d457-4c84-b3bb-659f82e02437,松本 尚大 / Naohiro Matsumoto,高林さん採用面接,2024-05-30T04:00:00.0000000,2024-05-30T06:00:00.0000000,Microsoft Teams Meeting,OB会
+e9c84a00-d457-4c84-b3bb-659f82e02437,松本 尚大 / Naohiro Matsumoto,,2024-05-26T12:00:00.0000000,2024-05-26T14:00:00.0000000,Microsoft Teams Meeting,OB会
+e9c84a00-d457-4c84-b3bb-659f82e02437,松本 尚大 / Naohiro Matsumoto,【OB定例会議】4/20京都1DAY合宿議論内容資料のRV&7.1に向けた残論点整理について,2024-05-22T13:00:00.0000000,2024-05-22T15:00:00.0000000,Microsoft Teams Meeting,松本 尚大 / Naohiro Matsumoto
+e9c84a00-d457-4c84-b3bb-659f82e02437,松本 尚大 / Naohiro Matsumoto,5/10 現状の確認（21:00~22:00）及びマスケ案整理（22:00~24:00）,2024-05-10T12:00:00.0000000,2024-05-10T15:00:00.0000000,Microsoft Teams Meeting,OB会
+e9c84a00-d457-4c84-b3bb-659f82e02437,松本 尚大 / Naohiro Matsumoto,マスケ案　報告会,2024-05-14T13:00:00.0000000,2024-05-14T15:00:00.0000000,Microsoft Teams Meeting,AIBOSスキーム
+e9c84a00-d457-4c84-b3bb-659f82e02437,松本 尚大 / Naohiro Matsumoto,残検討事項の潰しこみMTG,2024-05-11T11:00:00.0000000,2024-05-11T13:00:00.0000000,Microsoft Teams Meeting,OB会
+82f5d674-17c0-4246-afe4-2eb7c5a42058,松崎 真里 / Mari Matsuzaki,2024-05-31 画像解析システム打ち合わせ,2024-05-31T08:00:00.0000000,2024-05-31T09:00:00.0000000,Microsoft Teams Meeting,森 志人 / Yukito Mori
+82f5d674-17c0-4246-afe4-2eb7c5a42058,松崎 真里 / Mari Matsuzaki,東京会合打ち合わせ,2024-05-30T13:30:00.0000000,2024-05-30T14:00:00.0000000,Microsoft Teams Meeting,カバレッジ部門
+82f5d674-17c0-4246-afe4-2eb7c5a42058,松崎 真里 / Mari Matsuzaki,2024-05-30 第１回株式会社設立勉強会,2024-05-30T11:00:00.0000000,2024-05-30T12:00:00.0000000,Microsoft Teams Meeting,株式会社設立勉強会
+82f5d674-17c0-4246-afe4-2eb7c5a42058,松崎 真里 / Mari Matsuzaki,高林さん採用面接,2024-05-30T04:00:00.0000000,2024-05-30T06:00:00.0000000,Microsoft Teams Meeting,OB会
+82f5d674-17c0-4246-afe4-2eb7c5a42058,松崎 真里 / Mari Matsuzaki,インフロニア会合AIBOS事前打ち合わせ,2024-05-29T07:00:00.0000000,2024-05-29T08:00:00.0000000,Microsoft Teams Meeting,四日市戦略会議
+82f5d674-17c0-4246-afe4-2eb7c5a42058,松崎 真里 / Mari Matsuzaki,松崎 10:00-20:00,2024-05-30T00:00:00.0000000,2024-05-31T00:00:00.0000000,,松崎 真里 / Mari Matsuzaki
+82f5d674-17c0-4246-afe4-2eb7c5a42058,松崎 真里 / Mari Matsuzaki,みおつくしPJ第八回MTG,2024-05-30T10:00:00.0000000,2024-05-30T11:00:00.0000000,Microsoft Teams Meeting,Shared_みおつくし
+82f5d674-17c0-4246-afe4-2eb7c5a42058,松崎 真里 / Mari Matsuzaki,川井社長 京都事務所訪問,2024-06-30T00:00:00.0000000,2024-07-01T00:00:00.0000000,カバレッジ部門/一般,カバレッジ部門
+82f5d674-17c0-4246-afe4-2eb7c5a42058,松崎 真里 / Mari Matsuzaki,2024-05-28 広報戦略部 HP会議,2024-05-28T10:00:00.0000000,2024-05-28T11:00:00.0000000,Microsoft Teams Meeting,広報戦略部
+82f5d674-17c0-4246-afe4-2eb7c5a42058,松崎 真里 / Mari Matsuzaki,Canceled: 2024-05-28 広報戦略部 HP会議,2024-05-28T10:00:00.0000000,2024-05-28T10:30:00.0000000,Microsoft Teams Meeting,永淵 翔大 / Shota Nagafuchi
+7ecaa6a8-ec9c-4f4f-9b86-44d89d925775,森 志人 / Yukito Mori,2024-05-31 画像解析システム打ち合わせ,2024-05-31T08:00:00.0000000,2024-05-31T09:00:00.0000000,Microsoft Teams Meeting,森 志人 / Yukito Mori
+7ecaa6a8-ec9c-4f4f-9b86-44d89d925775,森 志人 / Yukito Mori,東京会合打ち合わせ,2024-05-30T13:30:00.0000000,2024-05-30T14:00:00.0000000,Microsoft Teams Meeting,カバレッジ部門
+7ecaa6a8-ec9c-4f4f-9b86-44d89d925775,森 志人 / Yukito Mori,第1回 管清工業チームMTG,2024-05-30T07:00:00.0000000,2024-05-30T08:00:00.0000000,Microsoft Teams Meeting,Shared_管清工業
+7ecaa6a8-ec9c-4f4f-9b86-44d89d925775,森 志人 / Yukito Mori,みおつくしPJ第八回MTG,2024-05-30T10:00:00.0000000,2024-05-30T11:00:00.0000000,Microsoft Teams Meeting,Shared_みおつくし
+7ecaa6a8-ec9c-4f4f-9b86-44d89d925775,森 志人 / Yukito Mori,森 15:30-22:00 オフィス,2024-05-29T00:00:00.0000000,2024-05-30T00:00:00.0000000,,森 志人 / Yukito Mori
+7ecaa6a8-ec9c-4f4f-9b86-44d89d925775,森 志人 / Yukito Mori,森 14:00-22:00 オフィス,2024-05-28T00:00:00.0000000,2024-05-29T00:00:00.0000000,,森 志人 / Yukito Mori
+7ecaa6a8-ec9c-4f4f-9b86-44d89d925775,森 志人 / Yukito Mori,2024-05-28 広報戦略部 HP会議,2024-05-28T10:00:00.0000000,2024-05-28T11:00:00.0000000,Microsoft Teams Meeting,広報戦略部
+7ecaa6a8-ec9c-4f4f-9b86-44d89d925775,森 志人 / Yukito Mori,Canceled: 2024-05-28 広報戦略部 HP会議,2024-05-28T10:00:00.0000000,2024-05-28T10:30:00.0000000,Microsoft Teams Meeting,永淵 翔大 / Shota Nagafuchi
+7ecaa6a8-ec9c-4f4f-9b86-44d89d925775,森 志人 / Yukito Mori,森 16:00-17:30 オフィス,2024-05-27T00:00:00.0000000,2024-05-28T00:00:00.0000000,,森 志人 / Yukito Mori
+7ecaa6a8-ec9c-4f4f-9b86-44d89d925775,森 志人 / Yukito Mori,第5回 カバレッジ部門総会,2024-05-23T11:30:00.0000000,2024-05-23T12:30:00.0000000,Microsoft Teams Meeting,カバレッジ部門
+ba1b5523-f9b9-4b98-99ec-00ad0fde89bb,村上 浩之 / Hiroyuki Murakami,高林さん採用面接,2024-05-30T04:00:00.0000000,2024-05-30T06:00:00.0000000,Microsoft Teams Meeting,OB会
+ba1b5523-f9b9-4b98-99ec-00ad0fde89bb,村上 浩之 / Hiroyuki Murakami,,2024-05-26T12:00:00.0000000,2024-05-26T14:00:00.0000000,Microsoft Teams Meeting,OB会
+ba1b5523-f9b9-4b98-99ec-00ad0fde89bb,村上 浩之 / Hiroyuki Murakami,【OB定例会議】4/20京都1DAY合宿議論内容資料のRV&7.1に向けた残論点整理について,2024-05-22T13:00:00.0000000,2024-05-22T15:00:00.0000000,Microsoft Teams Meeting,松本 尚大 / Naohiro Matsumoto
+ba1b5523-f9b9-4b98-99ec-00ad0fde89bb,村上 浩之 / Hiroyuki Murakami,2024-05-15 東京・京都顔合わせMTG,2024-05-15T04:00:00.0000000,2024-05-15T05:00:00.0000000,Microsoft Teams Meeting,メディア事業
+ba1b5523-f9b9-4b98-99ec-00ad0fde89bb,村上 浩之 / Hiroyuki Murakami,5/10 現状の確認（21:00~22:00）及びマスケ案整理（22:00~24:00）,2024-05-10T12:00:00.0000000,2024-05-10T15:00:00.0000000,Microsoft Teams Meeting,OB会
+ba1b5523-f9b9-4b98-99ec-00ad0fde89bb,村上 浩之 / Hiroyuki Murakami,マスケ案　報告会,2024-05-14T13:00:00.0000000,2024-05-14T15:00:00.0000000,Microsoft Teams Meeting,AIBOSスキーム
+ba1b5523-f9b9-4b98-99ec-00ad0fde89bb,村上 浩之 / Hiroyuki Murakami,残検討事項の潰しこみMTG,2024-05-11T11:00:00.0000000,2024-05-11T13:00:00.0000000,Microsoft Teams Meeting,OB会
+eb2ab94d-a23f-4541-be79-553a7334972d,永淵 翔大 / Shota Nagafuchi,2024-05-30 第１回株式会社設立勉強会,2024-05-30T11:00:00.0000000,2024-05-30T12:00:00.0000000,Microsoft Teams Meeting,株式会社設立勉強会
+eb2ab94d-a23f-4541-be79-553a7334972d,永淵 翔大 / Shota Nagafuchi,高林さん採用面接,2024-05-30T04:00:00.0000000,2024-05-30T06:00:00.0000000,Microsoft Teams Meeting,OB会
+eb2ab94d-a23f-4541-be79-553a7334972d,永淵 翔大 / Shota Nagafuchi,永淵 20:00 - 21:00 株式会社設立勉強会,2024-05-30T00:00:00.0000000,2024-05-31T00:00:00.0000000,,永淵 翔大 / Shota Nagafuchi
+eb2ab94d-a23f-4541-be79-553a7334972d,永淵 翔大 / Shota Nagafuchi,2024-05-28 広報戦略部 HP会議,2024-05-28T10:00:00.0000000,2024-05-28T11:00:00.0000000,Microsoft Teams Meeting,広報戦略部
+eb2ab94d-a23f-4541-be79-553a7334972d,永淵 翔大 / Shota Nagafuchi,2024-05-29 Teams & Notion台帳作成会議,2024-05-29T00:00:00.0000000,2024-05-29T01:00:00.0000000,Microsoft Teams Meeting,情報インフラ部 京都支部
+eb2ab94d-a23f-4541-be79-553a7334972d,永淵 翔大 / Shota Nagafuchi,,2024-05-26T12:00:00.0000000,2024-05-26T14:00:00.0000000,Microsoft Teams Meeting,OB会
+eb2ab94d-a23f-4541-be79-553a7334972d,永淵 翔大 / Shota Nagafuchi,永淵 全日 休み(リモート対応可),2024-05-31T00:00:00.0000000,2024-06-01T00:00:00.0000000,,永淵 翔大 / Shota Nagafuchi
+eb2ab94d-a23f-4541-be79-553a7334972d,永淵 翔大 / Shota Nagafuchi,永淵 13:00 - 17:00 リモート(HP会議),2024-05-29T00:00:00.0000000,2024-05-30T00:00:00.0000000,,永淵 翔大 / Shota Nagafuchi
+eb2ab94d-a23f-4541-be79-553a7334972d,永淵 翔大 / Shota Nagafuchi,永淵 20:00 - 21:00 リモート 水道事業会議,2024-05-31T00:00:00.0000000,2024-06-01T00:00:00.0000000,,永淵 翔大 / Shota Nagafuchi
+eb2ab94d-a23f-4541-be79-553a7334972d,永淵 翔大 / Shota Nagafuchi,永淵 19:00 - 20:00 リモート HP会議,2024-05-28T00:00:00.0000000,2024-05-29T00:00:00.0000000,,永淵 翔大 / Shota Nagafuchi
+a704d3a9-1af7-481f-922d-701144eebe9d,中村 香里 / Kaori Nakamura,2024-05-28 総務部 業務整理MTG,2024-05-28T11:00:00.0000000,2024-05-28T12:30:00.0000000,Microsoft Teams Meeting,総務部 本部
+a704d3a9-1af7-481f-922d-701144eebe9d,中村 香里 / Kaori Nakamura,中村 勤務可能,2024-06-02T00:00:00.0000000,2024-06-03T00:00:00.0000000,,中村 香里 / Kaori Nakamura
+a704d3a9-1af7-481f-922d-701144eebe9d,中村 香里 / Kaori Nakamura,情報インフラ部 定例会議,2024-05-27T09:30:00.0000000,2024-05-27T10:30:00.0000000,Microsoft Teams Meeting,情報インフラ部 京都支部
+a704d3a9-1af7-481f-922d-701144eebe9d,中村 香里 / Kaori Nakamura,2024-05-23 総務部 庶務・経理 MTG,2024-05-23T09:30:00.0000000,2024-05-23T10:30:00.0000000,Microsoft Teams Meeting,総務部 東京支部
+a704d3a9-1af7-481f-922d-701144eebe9d,中村 香里 / Kaori Nakamura,Canceled: 総務部 業務整理MTG,2024-05-28T11:00:00.0000000,2024-05-28T12:30:00.0000000,Microsoft Teams Meeting,稲葉 皓信 / Terunobu Inaba
+a704d3a9-1af7-481f-922d-701144eebe9d,中村 香里 / Kaori Nakamura,中村 休み,2024-05-30T00:00:00.0000000,2024-05-31T00:00:00.0000000,,中村 香里 / Kaori Nakamura
+a704d3a9-1af7-481f-922d-701144eebe9d,中村 香里 / Kaori Nakamura,中村 休み,2024-05-29T00:00:00.0000000,2024-05-30T00:00:00.0000000,,中村 香里 / Kaori Nakamura
+a704d3a9-1af7-481f-922d-701144eebe9d,中村 香里 / Kaori Nakamura,中村 休み,2024-05-28T00:00:00.0000000,2024-05-29T00:00:00.0000000,,中村 香里 / Kaori Nakamura
+a704d3a9-1af7-481f-922d-701144eebe9d,中村 香里 / Kaori Nakamura,中村 14:00~18:00 東京事務所,2024-05-31T00:00:00.0000000,2024-06-01T00:00:00.0000000,,中村 香里 / Kaori Nakamura
+a704d3a9-1af7-481f-922d-701144eebe9d,中村 香里 / Kaori Nakamura,中村 10:00~16:00 東京事務所,2024-06-01T00:00:00.0000000,2024-06-02T00:00:00.0000000,,中村 香里 / Kaori Nakamura
+39157c13-349c-4795-a3ab-88b43212d6d4,中尾 允哉 / Masaya Nakao,第1回 管清工業チームMTG,2024-05-30T07:00:00.0000000,2024-05-30T08:00:00.0000000,Microsoft Teams Meeting,Shared_管清工業
+39157c13-349c-4795-a3ab-88b43212d6d4,中尾 允哉 / Masaya Nakao,みおつくしPJ第八回MTG,2024-05-30T10:00:00.0000000,2024-05-30T11:00:00.0000000,Microsoft Teams Meeting,Shared_みおつくし
+39157c13-349c-4795-a3ab-88b43212d6d4,中尾 允哉 / Masaya Nakao,2024-05-28 広報戦略部 HP会議,2024-05-28T10:00:00.0000000,2024-05-28T11:00:00.0000000,Microsoft Teams Meeting,広報戦略部
+39157c13-349c-4795-a3ab-88b43212d6d4,中尾 允哉 / Masaya Nakao,Canceled: 2024-05-28 広報戦略部 HP会議,2024-05-28T10:00:00.0000000,2024-05-28T10:30:00.0000000,Microsoft Teams Meeting,永淵 翔大 / Shota Nagafuchi
+39157c13-349c-4795-a3ab-88b43212d6d4,中尾 允哉 / Masaya Nakao,中尾_18:00~21:00_出勤不可,2024-05-27T00:00:00.0000000,2024-05-28T00:00:00.0000000,,中尾 允哉 / Masaya Nakao
+39157c13-349c-4795-a3ab-88b43212d6d4,中尾 允哉 / Masaya Nakao,みおつくしPJ第七回MTG,2024-05-23T10:00:00.0000000,2024-05-23T11:00:00.0000000,Microsoft Teams Meeting,Shared_みおつくし
+39157c13-349c-4795-a3ab-88b43212d6d4,中尾 允哉 / Masaya Nakao,中尾 17:00~19:00_オフィス勤務,2024-05-22T00:00:00.0000000,2024-05-23T00:00:00.0000000,,中尾 允哉 / Masaya Nakao
+39157c13-349c-4795-a3ab-88b43212d6d4,中尾 允哉 / Masaya Nakao,0528打ち合わせ（AIBOS×みおつくし）,2024-05-28T06:00:00.0000000,2024-05-28T07:00:00.0000000,Microsoft Teams Meeting,AIBOS×みおつくし
+39157c13-349c-4795-a3ab-88b43212d6d4,中尾 允哉 / Masaya Nakao,四日市水道局会議,2024-05-21T10:00:00.0000000,2024-05-21T11:00:00.0000000,Microsoft Teams Meeting,四日市市水道局
+39157c13-349c-4795-a3ab-88b43212d6d4,中尾 允哉 / Masaya Nakao,中尾允哉_17:00~19:00_オフィス勤務,2024-05-21T00:00:00.0000000,2024-05-22T00:00:00.0000000,Microsoft Teams Meeting,中尾 允哉
+47c2a6c7-a2b5-4652-8c78-3387dceb061e,西永 優一 / Yuichi Nishinaga,メディア事業 定例会議,2024-05-20T10:30:00.0000000,2024-05-20T11:30:00.0000000,Microsoft Teams Meeting,メディア事業
+47c2a6c7-a2b5-4652-8c78-3387dceb061e,西永 優一 / Yuichi Nishinaga,西永 休み,2024-05-31T00:00:00.0000000,2024-06-03T00:00:00.0000000,,西永 優一 / Yuichi Nishinaga
+47c2a6c7-a2b5-4652-8c78-3387dceb061e,西永 優一 / Yuichi Nishinaga,西永 19:00-23:00 東京事務所勤務可能,2024-05-30T00:00:00.0000000,2024-05-31T00:00:00.0000000,,西永 優一 / Yuichi Nishinaga
+47c2a6c7-a2b5-4652-8c78-3387dceb061e,西永 優一 / Yuichi Nishinaga,西永 19:00-23:00 東京事務所勤務可能,2024-05-29T00:00:00.0000000,2024-05-30T00:00:00.0000000,,西永 優一 / Yuichi Nishinaga
+47c2a6c7-a2b5-4652-8c78-3387dceb061e,西永 優一 / Yuichi Nishinaga,西永 休み,2024-05-28T00:00:00.0000000,2024-05-29T00:00:00.0000000,,西永 優一 / Yuichi Nishinaga
+47c2a6c7-a2b5-4652-8c78-3387dceb061e,西永 優一 / Yuichi Nishinaga,西永 16:00-23:00 東京事務所勤務可能,2024-05-27T00:00:00.0000000,2024-05-28T00:00:00.0000000,,西永 優一 / Yuichi Nishinaga
+47c2a6c7-a2b5-4652-8c78-3387dceb061e,西永 優一 / Yuichi Nishinaga,西永 休み,2024-05-26T00:00:00.0000000,2024-05-27T00:00:00.0000000,,西永 優一 / Yuichi Nishinaga
+47c2a6c7-a2b5-4652-8c78-3387dceb061e,西永 優一 / Yuichi Nishinaga,西永 10:00-16:00 東京事務所勤務可能,2024-05-25T00:00:00.0000000,2024-05-26T00:00:00.0000000,,西永 優一 / Yuichi Nishinaga
+47c2a6c7-a2b5-4652-8c78-3387dceb061e,西永 優一 / Yuichi Nishinaga,西永 休み,2024-05-24T00:00:00.0000000,2024-05-25T00:00:00.0000000,,西永 優一 / Yuichi Nishinaga
+47c2a6c7-a2b5-4652-8c78-3387dceb061e,西永 優一 / Yuichi Nishinaga,西永 19:00-23:00 東京事務所勤務可能,2024-05-23T00:00:00.0000000,2024-05-24T00:00:00.0000000,,西永 優一 / Yuichi Nishinaga
+d55851b1-a80a-4a51-860e-7b661c44a3a6,岡田 侑貴 / Yuki Okada,高林さん採用面接,2024-05-30T04:00:00.0000000,2024-05-30T06:00:00.0000000,Microsoft Teams Meeting,OB会
+d55851b1-a80a-4a51-860e-7b661c44a3a6,岡田 侑貴 / Yuki Okada,,2024-05-26T12:00:00.0000000,2024-05-26T14:00:00.0000000,Microsoft Teams Meeting,OB会
+d55851b1-a80a-4a51-860e-7b661c44a3a6,岡田 侑貴 / Yuki Okada,【OB定例会議】4/20京都1DAY合宿議論内容資料のRV&7.1に向けた残論点整理について,2024-05-22T13:00:00.0000000,2024-05-22T15:00:00.0000000,Microsoft Teams Meeting,松本 尚大 / Naohiro Matsumoto
+d55851b1-a80a-4a51-860e-7b661c44a3a6,岡田 侑貴 / Yuki Okada,2024-05-15 東京・京都顔合わせMTG,2024-05-15T04:00:00.0000000,2024-05-15T05:00:00.0000000,Microsoft Teams Meeting,メディア事業
+d55851b1-a80a-4a51-860e-7b661c44a3a6,岡田 侑貴 / Yuki Okada,マスケ案　報告会,2024-05-14T13:00:00.0000000,2024-05-14T15:00:00.0000000,Microsoft Teams Meeting,AIBOSスキーム
+d55851b1-a80a-4a51-860e-7b661c44a3a6,岡田 侑貴 / Yuki Okada,5/10 現状の確認（21:00~22:00）及びマスケ案整理（22:00~24:00）,2024-05-10T12:00:00.0000000,2024-05-10T15:00:00.0000000,Microsoft Teams Meeting,OB会
+d55851b1-a80a-4a51-860e-7b661c44a3a6,岡田 侑貴 / Yuki Okada,残検討事項の潰しこみMTG,2024-05-11T11:00:00.0000000,2024-05-11T13:00:00.0000000,Microsoft Teams Meeting,OB会
+4a5837c4-db80-45eb-8b98-20f4b8cb0fd3,岡田 悠里 / Yuuri Okada,岡田　17：00～21：00　オフィス勤務,2024-06-04T00:00:00.0000000,2024-06-05T00:00:00.0000000,,岡田 悠里 / Yuuri Okada
+4a5837c4-db80-45eb-8b98-20f4b8cb0fd3,岡田 悠里 / Yuuri Okada,岡田　12：30～オフィス勤務,2024-06-02T00:00:00.0000000,2024-06-03T00:00:00.0000000,,岡田 悠里 / Yuuri Okada
+4a5837c4-db80-45eb-8b98-20f4b8cb0fd3,岡田 悠里 / Yuuri Okada,岡田　19：00～21：00　オフィス勤務,2024-06-06T00:00:00.0000000,2024-06-07T00:00:00.0000000,,岡田 悠里 / Yuuri Okada
+4a5837c4-db80-45eb-8b98-20f4b8cb0fd3,岡田 悠里 / Yuuri Okada,岡田 17:00～リモート勤務,2024-05-28T00:00:00.0000000,2024-05-29T00:00:00.0000000,,岡田 悠里 / Yuuri Okada
+4a5837c4-db80-45eb-8b98-20f4b8cb0fd3,岡田 悠里 / Yuuri Okada,岡田　終日勤務不可,2024-06-01T00:00:00.0000000,2024-06-02T00:00:00.0000000,,岡田 悠里 / Yuuri Okada
+4a5837c4-db80-45eb-8b98-20f4b8cb0fd3,岡田 悠里 / Yuuri Okada,岡田　終日勤務不可（研究室）,2024-05-31T00:00:00.0000000,2024-06-01T00:00:00.0000000,,岡田 悠里 / Yuuri Okada
+4a5837c4-db80-45eb-8b98-20f4b8cb0fd3,岡田 悠里 / Yuuri Okada,岡田 15:00～21:00 オフィス勤務,2024-05-29T00:00:00.0000000,2024-05-30T00:00:00.0000000,,岡田 悠里 / Yuuri Okada
+4a5837c4-db80-45eb-8b98-20f4b8cb0fd3,岡田 悠里 / Yuuri Okada,2024-05-29 第6回 提案書会議,2024-05-29T10:30:00.0000000,2024-05-29T11:30:00.0000000,Microsoft Teams Meeting,提案書事業
+4a5837c4-db80-45eb-8b98-20f4b8cb0fd3,岡田 悠里 / Yuuri Okada,岡田　18：00～22：00　オフィス勤務,2024-05-27T00:00:00.0000000,2024-05-28T00:00:00.0000000,,岡田 悠里 / Yuuri Okada
+4a5837c4-db80-45eb-8b98-20f4b8cb0fd3,岡田 悠里 / Yuuri Okada,岡田　終日勤務不可（研究室）,2024-05-24T00:00:00.0000000,2024-05-25T00:00:00.0000000,,岡田 悠里 / Yuuri Okada
+8d4e38aa-b8be-4f41-a9ed-1a8b8e7bc26b,AIBOS 共有,高林さん採用面接,2024-05-30T04:00:00.0000000,2024-05-30T06:00:00.0000000,Microsoft Teams Meeting,OB会
+8d4e38aa-b8be-4f41-a9ed-1a8b8e7bc26b,AIBOS 共有,2024-05-28 広報戦略部 HP会議,2024-05-28T10:00:00.0000000,2024-05-28T11:00:00.0000000,Microsoft Teams Meeting,広報戦略部
+8d4e38aa-b8be-4f41-a9ed-1a8b8e7bc26b,AIBOS 共有,Canceled: 2024-05-28 広報戦略部 HP会議,2024-05-28T10:00:00.0000000,2024-05-28T10:30:00.0000000,Microsoft Teams Meeting,永淵 翔大 / Shota Nagafuchi
+8d4e38aa-b8be-4f41-a9ed-1a8b8e7bc26b,AIBOS 共有,,2024-05-26T12:00:00.0000000,2024-05-26T14:00:00.0000000,Microsoft Teams Meeting,OB会
+8d4e38aa-b8be-4f41-a9ed-1a8b8e7bc26b,AIBOS 共有,2024-05-29 第6回 提案書会議,2024-05-29T10:30:00.0000000,2024-05-29T11:30:00.0000000,Microsoft Teams Meeting,提案書事業
+8d4e38aa-b8be-4f41-a9ed-1a8b8e7bc26b,AIBOS 共有,情報インフラ部 定例会議,2024-05-27T09:30:00.0000000,2024-05-27T10:30:00.0000000,Microsoft Teams Meeting,情報インフラ部 京都支部
+8d4e38aa-b8be-4f41-a9ed-1a8b8e7bc26b,AIBOS 共有,2024-05-23 Notion運用マニュアル作成 会議,2024-05-23T06:00:00.0000000,2024-05-23T09:00:00.0000000,Microsoft Teams Meeting,情報インフラ部 京都支部
+8d4e38aa-b8be-4f41-a9ed-1a8b8e7bc26b,AIBOS 共有,四日市水道局会議,2024-05-21T10:00:00.0000000,2024-05-21T11:00:00.0000000,Microsoft Teams Meeting,四日市市水道局
+7f0a9b7d-e4fb-4258-b89f-e767efd08b33,清水 聡 / Satoshi Shimizu（イージス）,【イベント】管清工業訪問,2024-06-17T03:00:00.0000000,2024-06-17T04:00:00.0000000,Microsoft Teams Meeting,AIBOS Water
+7f0a9b7d-e4fb-4258-b89f-e767efd08b33,清水 聡 / Satoshi Shimizu（イージス）,0528打ち合わせ（AIBOS×みおつくし）,2024-05-28T06:00:00.0000000,2024-05-28T07:00:00.0000000,Microsoft Teams Meeting,AIBOS×みおつくし
+7f0a9b7d-e4fb-4258-b89f-e767efd08b33,清水 聡 / Satoshi Shimizu（イージス）,四日市水道局会議,2024-05-21T10:00:00.0000000,2024-05-21T11:00:00.0000000,Microsoft Teams Meeting,四日市市水道局
+7f0a9b7d-e4fb-4258-b89f-e767efd08b33,清水 聡 / Satoshi Shimizu（イージス）,第五回みおつくしPJ会議,2024-05-09T11:00:00.0000000,2024-05-09T12:00:00.0000000,オフィス,みおつくし戦略会議
+7f0a9b7d-e4fb-4258-b89f-e767efd08b33,清水 聡 / Satoshi Shimizu（イージス）,5/10 インフロニア-四日市市水道局山本管理者 会合,2024-05-10T01:00:00.0000000,2024-05-10T02:00:00.0000000,Microsoft Teams Meeting,AIBOS Water
+7f0a9b7d-e4fb-4258-b89f-e767efd08b33,清水 聡 / Satoshi Shimizu（イージス）,Canceled: 四日市市水道局会議,2024-04-30T10:00:00.0000000,2024-04-30T10:30:00.0000000,Microsoft Teams Meeting,四日市市水道局
+7f0a9b7d-e4fb-4258-b89f-e767efd08b33,清水 聡 / Satoshi Shimizu（イージス）,提案書事業キックオフMTG,2024-04-30T09:00:00.0000000,2024-04-30T12:30:00.0000000,社長室,AIBOS 京都
+7f0a9b7d-e4fb-4258-b89f-e767efd08b33,清水 聡 / Satoshi Shimizu（イージス）,水道事業会議,2024-04-26T10:00:00.0000000,2024-04-26T11:00:00.0000000,Microsoft Teams Meeting,AIBOS Water
+7f0a9b7d-e4fb-4258-b89f-e767efd08b33,清水 聡 / Satoshi Shimizu（イージス）,四日市水道局訪問 管路DS中村技術部長打合,2024-04-24T05:00:00.0000000,2024-04-24T05:30:00.0000000,Microsoft Teams Meeting,AIBOS Water
+7f0a9b7d-e4fb-4258-b89f-e767efd08b33,清水 聡 / Satoshi Shimizu（イージス）,四日市市水道局 会議,2024-04-23T10:00:00.0000000,2024-04-23T10:30:00.0000000,Microsoft Teams Meeting,四日市市水道局
+b8faea36-9183-49fb-9cab-96e2e1249e73,下岡 拓嗣 / Takuji Shimooka,下岡　終日稼働不可,2024-06-01T00:00:00.0000000,2024-06-02T00:00:00.0000000,,下岡 拓嗣 / Takuji Shimooka
+b8faea36-9183-49fb-9cab-96e2e1249e73,下岡 拓嗣 / Takuji Shimooka,下岡　終日稼働不可,2024-05-31T00:00:00.0000000,2024-06-01T00:00:00.0000000,,下岡 拓嗣 / Takuji Shimooka
+b8faea36-9183-49fb-9cab-96e2e1249e73,下岡 拓嗣 / Takuji Shimooka,下岡　リモー終日終日,2024-05-30T00:00:00.0000000,2024-05-31T00:00:00.0000000,,下岡 拓嗣 / Takuji Shimooka
+b8faea36-9183-49fb-9cab-96e2e1249e73,下岡 拓嗣 / Takuji Shimooka,下岡　リモート　終日,2024-05-28T00:00:00.0000000,2024-05-29T00:00:00.0000000,,下岡 拓嗣 / Takuji Shimooka
+b8faea36-9183-49fb-9cab-96e2e1249e73,下岡 拓嗣 / Takuji Shimooka,下岡　リモー終日終日,2024-05-27T00:00:00.0000000,2024-05-28T00:00:00.0000000,,下岡 拓嗣 / Takuji Shimooka
+b8faea36-9183-49fb-9cab-96e2e1249e73,下岡 拓嗣 / Takuji Shimooka,下岡　リモー終日終日,2024-05-26T00:00:00.0000000,2024-05-27T00:00:00.0000000,,下岡 拓嗣 / Takuji Shimooka
+b8faea36-9183-49fb-9cab-96e2e1249e73,下岡 拓嗣 / Takuji Shimooka,下岡　リモー終日終日,2024-05-25T00:00:00.0000000,2024-05-26T00:00:00.0000000,,下岡 拓嗣 / Takuji Shimooka
+b8faea36-9183-49fb-9cab-96e2e1249e73,下岡 拓嗣 / Takuji Shimooka,2024-05-29 第6回 提案書会議,2024-05-29T10:30:00.0000000,2024-05-29T11:30:00.0000000,Microsoft Teams Meeting,提案書事業
+b8faea36-9183-49fb-9cab-96e2e1249e73,下岡 拓嗣 / Takuji Shimooka,第5回 提案書事業会議,2024-05-22T08:00:00.0000000,2024-05-22T09:00:00.0000000,Microsoft Teams Meeting,提案書事業
+b8faea36-9183-49fb-9cab-96e2e1249e73,下岡 拓嗣 / Takuji Shimooka,下岡　リモート勤務,2024-05-22T00:00:00.0000000,2024-05-23T00:00:00.0000000,,下岡 拓嗣 / Takuji Shimooka
+123034d7-8260-4ada-b28d-12e0a855fce5,志手 維吹 / Ibuki Shite,高林さん採用面接,2024-05-30T04:00:00.0000000,2024-05-30T06:00:00.0000000,Microsoft Teams Meeting,OB会
+123034d7-8260-4ada-b28d-12e0a855fce5,志手 維吹 / Ibuki Shite,,2024-05-26T12:00:00.0000000,2024-05-26T14:00:00.0000000,Microsoft Teams Meeting,OB会
+123034d7-8260-4ada-b28d-12e0a855fce5,志手 維吹 / Ibuki Shite,【OB定例会議】4/20京都1DAY合宿議論内容資料のRV&7.1に向けた残論点整理について,2024-05-22T13:00:00.0000000,2024-05-22T15:00:00.0000000,Microsoft Teams Meeting,松本 尚大 / Naohiro Matsumoto
+123034d7-8260-4ada-b28d-12e0a855fce5,志手 維吹 / Ibuki Shite,メディア事業 定例会議,2024-05-20T10:30:00.0000000,2024-05-20T11:30:00.0000000,Microsoft Teams Meeting,メディア事業
+123034d7-8260-4ada-b28d-12e0a855fce5,志手 維吹 / Ibuki Shite,2024-05-15 東京・京都顔合わせMTG,2024-05-15T04:00:00.0000000,2024-05-15T05:00:00.0000000,Microsoft Teams Meeting,メディア事業
+123034d7-8260-4ada-b28d-12e0a855fce5,志手 維吹 / Ibuki Shite,5/10 現状の確認（21:00~22:00）及びマスケ案整理（22:00~24:00）,2024-05-10T12:00:00.0000000,2024-05-10T15:00:00.0000000,Microsoft Teams Meeting,OB会
+123034d7-8260-4ada-b28d-12e0a855fce5,志手 維吹 / Ibuki Shite,マスケ案　報告会,2024-05-14T13:00:00.0000000,2024-05-14T15:00:00.0000000,Microsoft Teams Meeting,AIBOSスキーム
+123034d7-8260-4ada-b28d-12e0a855fce5,志手 維吹 / Ibuki Shite,残検討事項の潰しこみMTG,2024-05-11T11:00:00.0000000,2024-05-11T13:00:00.0000000,Microsoft Teams Meeting,OB会
+d9b8bd45-8abc-41bc-a87b-57f17b326ffc,住本 圭 / Kei Sumimoto,2024-05-31 画像解析システム打ち合わせ,2024-05-31T08:00:00.0000000,2024-05-31T09:00:00.0000000,Microsoft Teams Meeting,森 志人 / Yukito Mori
+d9b8bd45-8abc-41bc-a87b-57f17b326ffc,住本 圭 / Kei Sumimoto,住本　東京出張インフロニアHD,2024-05-31T00:00:00.0000000,2024-06-01T00:00:00.0000000,,住本 圭 / Kei Sumimoto
+d9b8bd45-8abc-41bc-a87b-57f17b326ffc,住本 圭 / Kei Sumimoto,2024-05-30 第１回株式会社設立勉強会,2024-05-30T11:00:00.0000000,2024-05-30T12:00:00.0000000,Microsoft Teams Meeting,株式会社設立勉強会
+d9b8bd45-8abc-41bc-a87b-57f17b326ffc,住本 圭 / Kei Sumimoto,2024-05-29 第6回 提案書会議,2024-05-29T10:30:00.0000000,2024-05-29T11:30:00.0000000,Microsoft Teams Meeting,提案書事業
+d9b8bd45-8abc-41bc-a87b-57f17b326ffc,住本 圭 / Kei Sumimoto,住本　17:00〜オフィス勤務,2024-05-30T00:00:00.0000000,2024-05-31T00:00:00.0000000,,住本 圭 / Kei Sumimoto
+d9b8bd45-8abc-41bc-a87b-57f17b326ffc,住本 圭 / Kei Sumimoto,住本　17:00〜オフィス勤務,2024-05-29T00:00:00.0000000,2024-05-30T00:00:00.0000000,,住本 圭 / Kei Sumimoto
+d9b8bd45-8abc-41bc-a87b-57f17b326ffc,住本 圭 / Kei Sumimoto,住本　16:00〜オフィス勤務,2024-05-22T00:00:00.0000000,2024-05-23T00:00:00.0000000,,住本 圭 / Kei Sumimoto
+d9b8bd45-8abc-41bc-a87b-57f17b326ffc,住本 圭 / Kei Sumimoto,四日市水道局会議,2024-05-21T10:00:00.0000000,2024-05-21T11:00:00.0000000,Microsoft Teams Meeting,四日市市水道局
+d9b8bd45-8abc-41bc-a87b-57f17b326ffc,住本 圭 / Kei Sumimoto,第5回 提案書事業会議,2024-05-22T08:00:00.0000000,2024-05-22T09:00:00.0000000,Microsoft Teams Meeting,提案書事業
+d9b8bd45-8abc-41bc-a87b-57f17b326ffc,住本 圭 / Kei Sumimoto,住本　研究会が終わり時間があればオフィス出社(18:00以降),2024-05-20T00:00:00.0000000,2024-05-21T00:00:00.0000000,,住本 圭 / Kei Sumimoto
+04658e36-5439-40c8-84c6-03f082e1334b,谷口 樹 / Tatsuki Taniguchi,谷口 17:00-20:00 出社,2024-06-03T00:00:00.0000000,2024-06-04T00:00:00.0000000,,谷口 樹 / Tatsuki Taniguchi
+04658e36-5439-40c8-84c6-03f082e1334b,谷口 樹 / Tatsuki Taniguchi,谷口 14:30-17:00,2024-05-28T00:00:00.0000000,2024-05-29T00:00:00.0000000,,谷口 樹 / Tatsuki Taniguchi
+04658e36-5439-40c8-84c6-03f082e1334b,谷口 樹 / Tatsuki Taniguchi,谷口 14:00-16:00,2024-05-22T00:00:00.0000000,2024-05-23T00:00:00.0000000,,谷口 樹 / Tatsuki Taniguchi
+04658e36-5439-40c8-84c6-03f082e1334b,谷口 樹 / Tatsuki Taniguchi,谷口 14:00-16:00,2024-05-20T00:00:00.0000000,2024-05-21T00:00:00.0000000,,谷口 樹 / Tatsuki Taniguchi
+04658e36-5439-40c8-84c6-03f082e1334b,谷口 樹 / Tatsuki Taniguchi,谷口 15:00-17:00 出社勤務,2024-05-15T00:00:00.0000000,2024-05-16T00:00:00.0000000,,谷口 樹 / Tatsuki Taniguchi
+04658e36-5439-40c8-84c6-03f082e1334b,谷口 樹 / Tatsuki Taniguchi,谷口 16:00-18:00 出社勤務,2024-05-13T00:00:00.0000000,2024-05-14T00:00:00.0000000,,谷口 樹 / Tatsuki Taniguchi
+4b626264-610f-424c-857a-3621aeda34cc,樽谷 なぎさ / Nagisa Tarutani,樽谷リモート11時～,2024-05-31T00:00:00.0000000,2024-06-01T00:00:00.0000000,,樽谷 なぎさ / Nagisa Tarutani
+4b626264-610f-424c-857a-3621aeda34cc,樽谷 なぎさ / Nagisa Tarutani,樽谷 おやすみ,2024-05-30T00:00:00.0000000,2024-05-31T00:00:00.0000000,,樽谷 なぎさ / Nagisa Tarutani
+4b626264-610f-424c-857a-3621aeda34cc,樽谷 なぎさ / Nagisa Tarutani,樽谷 14時から在宅,2024-05-28T00:00:00.0000000,2024-05-29T00:00:00.0000000,,樽谷 なぎさ / Nagisa Tarutani
+4b626264-610f-424c-857a-3621aeda34cc,樽谷 なぎさ / Nagisa Tarutani,樽谷 15時からオフィス,2024-05-27T00:00:00.0000000,2024-05-28T00:00:00.0000000,,樽谷 なぎさ / Nagisa Tarutani
+4b626264-610f-424c-857a-3621aeda34cc,樽谷 なぎさ / Nagisa Tarutani,樽谷　12:30-21:30オフィス,2024-05-29T00:00:00.0000000,2024-05-30T00:00:00.0000000,,樽谷 なぎさ / Nagisa Tarutani
+4b626264-610f-424c-857a-3621aeda34cc,樽谷 なぎさ / Nagisa Tarutani,2024-05-29 第6回 提案書会議,2024-05-29T10:30:00.0000000,2024-05-29T11:30:00.0000000,Microsoft Teams Meeting,提案書事業
+4b626264-610f-424c-857a-3621aeda34cc,樽谷 なぎさ / Nagisa Tarutani,樽谷　お休み,2024-05-24T00:00:00.0000000,2024-05-25T00:00:00.0000000,,樽谷 なぎさ / Nagisa Tarutani
+4b626264-610f-424c-857a-3621aeda34cc,樽谷 なぎさ / Nagisa Tarutani,樽谷　たべっこ祭りのため終日不可,2024-05-25T00:00:00.0000000,2024-05-26T00:00:00.0000000,,樽谷 なぎさ / Nagisa Tarutani
+4b626264-610f-424c-857a-3621aeda34cc,樽谷 なぎさ / Nagisa Tarutani,樽谷　14:00-在宅 (都合により間に合えば20:00-オフィス),2024-05-23T00:00:00.0000000,2024-05-24T00:00:00.0000000,,樽谷 なぎさ / Nagisa Tarutani
+4b626264-610f-424c-857a-3621aeda34cc,樽谷 なぎさ / Nagisa Tarutani,樽谷 15時半ー オフィス,2024-05-19T00:00:00.0000000,2024-05-20T00:00:00.0000000,,樽谷 なぎさ / Nagisa Tarutani
+a5f7946e-1180-49ce-a143-228aaa952db2,友澤 里穂 / Riho Tomozawa,友澤 19:00- オフィス勤務,2024-06-06T00:00:00.0000000,2024-06-07T00:00:00.0000000,,友澤 里穂 / Riho Tomozawa
+a5f7946e-1180-49ce-a143-228aaa952db2,友澤 里穂 / Riho Tomozawa,友澤 終日対応不可,2024-06-02T00:00:00.0000000,2024-06-03T00:00:00.0000000,,友澤 里穂 / Riho Tomozawa
+a5f7946e-1180-49ce-a143-228aaa952db2,友澤 里穂 / Riho Tomozawa,友澤 12:00- オフィス勤務,2024-06-01T00:00:00.0000000,2024-06-02T00:00:00.0000000,,友澤 里穂 / Riho Tomozawa
+a5f7946e-1180-49ce-a143-228aaa952db2,友澤 里穂 / Riho Tomozawa,2024-05-29 第6回 提案書会議,2024-05-29T10:30:00.0000000,2024-05-29T11:30:00.0000000,Microsoft Teams Meeting,提案書事業
+a5f7946e-1180-49ce-a143-228aaa952db2,友澤 里穂 / Riho Tomozawa,友澤 終日対応不可,2024-05-31T00:00:00.0000000,2024-06-01T00:00:00.0000000,,友澤 里穂 / Riho Tomozawa
+a5f7946e-1180-49ce-a143-228aaa952db2,友澤 里穂 / Riho Tomozawa,友澤 終日対応不可,2024-05-30T00:00:00.0000000,2024-05-31T00:00:00.0000000,,友澤 里穂 / Riho Tomozawa
+a5f7946e-1180-49ce-a143-228aaa952db2,友澤 里穂 / Riho Tomozawa,友澤 終日対応不可,2024-05-28T00:00:00.0000000,2024-05-29T00:00:00.0000000,,友澤 里穂 / Riho Tomozawa
+a5f7946e-1180-49ce-a143-228aaa952db2,友澤 里穂 / Riho Tomozawa,友澤 19:30- オフィス勤務（提案書）,2024-05-29T00:00:00.0000000,2024-05-30T00:00:00.0000000,,友澤 里穂 / Riho Tomozawa
+a5f7946e-1180-49ce-a143-228aaa952db2,友澤 里穂 / Riho Tomozawa,友澤 17:00- オフィス勤務（提案書）,2024-05-27T00:00:00.0000000,2024-05-28T00:00:00.0000000,,友澤 里穂 / Riho Tomozawa
+a5f7946e-1180-49ce-a143-228aaa952db2,友澤 里穂 / Riho Tomozawa,友澤 9:00-13:00 リモート,2024-05-26T00:00:00.0000000,2024-05-27T00:00:00.0000000,,友澤 里穂 / Riho Tomozawa
+66fbba17-f7e9-497f-8c29-ba4de1dd790a,内田 敦也 / Atsuya Uchida,内田 13:00-15:00 オフィス,2024-06-01T00:00:00.0000000,2024-06-02T00:00:00.0000000,,内田 敦也 / Atsuya Uchida
+66fbba17-f7e9-497f-8c29-ba4de1dd790a,内田 敦也 / Atsuya Uchida,内田 休み,2024-05-31T00:00:00.0000000,2024-06-01T00:00:00.0000000,,内田 敦也 / Atsuya Uchida
+66fbba17-f7e9-497f-8c29-ba4de1dd790a,内田 敦也 / Atsuya Uchida,内田 休み,2024-05-30T00:00:00.0000000,2024-05-31T00:00:00.0000000,,内田 敦也 / Atsuya Uchida
+66fbba17-f7e9-497f-8c29-ba4de1dd790a,内田 敦也 / Atsuya Uchida,内田 休み,2024-05-29T00:00:00.0000000,2024-05-30T00:00:00.0000000,,内田 敦也 / Atsuya Uchida
+66fbba17-f7e9-497f-8c29-ba4de1dd790a,内田 敦也 / Atsuya Uchida,内田 休み,2024-05-27T00:00:00.0000000,2024-05-28T00:00:00.0000000,,内田 敦也 / Atsuya Uchida
+66fbba17-f7e9-497f-8c29-ba4de1dd790a,内田 敦也 / Atsuya Uchida,内田 休み,2024-05-26T00:00:00.0000000,2024-05-27T00:00:00.0000000,,内田 敦也 / Atsuya Uchida
+66fbba17-f7e9-497f-8c29-ba4de1dd790a,内田 敦也 / Atsuya Uchida,内田 17:00-20:00 オフィス,2024-05-28T00:00:00.0000000,2024-05-29T00:00:00.0000000,,内田 敦也 / Atsuya Uchida
+66fbba17-f7e9-497f-8c29-ba4de1dd790a,内田 敦也 / Atsuya Uchida,内田 休み,2024-05-25T00:00:00.0000000,2024-05-26T00:00:00.0000000,,内田 敦也 / Atsuya Uchida
+66fbba17-f7e9-497f-8c29-ba4de1dd790a,内田 敦也 / Atsuya Uchida,内田 休み,2024-05-23T00:00:00.0000000,2024-05-24T00:00:00.0000000,,内田 敦也 / Atsuya Uchida
+66fbba17-f7e9-497f-8c29-ba4de1dd790a,内田 敦也 / Atsuya Uchida,内田 休み,2024-05-22T00:00:00.0000000,2024-05-23T00:00:00.0000000,,内田 敦也 / Atsuya Uchida
+92c38c98-0398-4d16-a46b-cced6af7326c,和田 佳一郎 / Keiichiro Wada,第1回 管清工業チームMTG,2024-05-30T07:00:00.0000000,2024-05-30T08:00:00.0000000,Microsoft Teams Meeting,Shared_管清工業
+92c38c98-0398-4d16-a46b-cced6af7326c,和田 佳一郎 / Keiichiro Wada,和田　休み,2024-06-01T00:00:00.0000000,2024-06-02T00:00:00.0000000,,和田 佳一郎 / Keiichiro Wada
+92c38c98-0398-4d16-a46b-cced6af7326c,和田 佳一郎 / Keiichiro Wada,和田　休み,2024-05-31T00:00:00.0000000,2024-06-01T00:00:00.0000000,,和田 佳一郎 / Keiichiro Wada
+92c38c98-0398-4d16-a46b-cced6af7326c,和田 佳一郎 / Keiichiro Wada,和田　16:00-18:00 京都オフィス,2024-05-27T07:00:00.0000000,2024-05-27T09:00:00.0000000,,和田 佳一郎 / Keiichiro Wada
+92c38c98-0398-4d16-a46b-cced6af7326c,和田 佳一郎 / Keiichiro Wada,和田　16:30-19:00 京都オフィス,2024-05-28T00:00:00.0000000,2024-05-29T00:00:00.0000000,,和田 佳一郎 / Keiichiro Wada
+92c38c98-0398-4d16-a46b-cced6af7326c,和田 佳一郎 / Keiichiro Wada,機械学習チーム アイスブレイク,2024-05-16T06:00:00.0000000,2024-05-16T07:00:00.0000000,Microsoft Teams Meeting,技術開発部門
+92c38c98-0398-4d16-a46b-cced6af7326c,和田 佳一郎 / Keiichiro Wada,和田 15:00-17:00,2024-05-16T00:00:00.0000000,2024-05-17T00:00:00.0000000,,和田 佳一郎 / Keiichiro Wada
+92c38c98-0398-4d16-a46b-cced6af7326c,和田 佳一郎 / Keiichiro Wada,和田 14:00-16:00 出社勤務,2024-05-14T00:00:00.0000000,2024-05-15T00:00:00.0000000,,和田 佳一郎 / Keiichiro Wada
+92c38c98-0398-4d16-a46b-cced6af7326c,和田 佳一郎 / Keiichiro Wada,和田 16:00-18:00 出社勤務,2024-05-13T00:00:00.0000000,2024-05-14T00:00:00.0000000,,和田 佳一郎 / Keiichiro Wada
+006b590a-de65-4618-9165-3c428955464d,若林 慶 / Kei Wakabayashi,高林さん採用面接,2024-05-30T04:00:00.0000000,2024-05-30T06:00:00.0000000,Microsoft Teams Meeting,OB会
+006b590a-de65-4618-9165-3c428955464d,若林 慶 / Kei Wakabayashi,,2024-05-26T12:00:00.0000000,2024-05-26T14:00:00.0000000,Microsoft Teams Meeting,OB会
+88f2730e-d457-45c3-b02d-7eae937aaa2d,渡邊 英次 / Eiji Watanabe,2024-05-31 画像解析システム打ち合わせ,2024-05-31T08:00:00.0000000,2024-05-31T09:00:00.0000000,Microsoft Teams Meeting,森 志人 / Yukito Mori
+88f2730e-d457-45c3-b02d-7eae937aaa2d,渡邊 英次 / Eiji Watanabe,2024-05-30 第１回株式会社設立勉強会,2024-05-30T11:00:00.0000000,2024-05-30T12:00:00.0000000,Microsoft Teams Meeting,株式会社設立勉強会
+88f2730e-d457-45c3-b02d-7eae937aaa2d,渡邊 英次 / Eiji Watanabe,高林さん採用面接,2024-05-30T04:00:00.0000000,2024-05-30T06:00:00.0000000,Microsoft Teams Meeting,OB会
+88f2730e-d457-45c3-b02d-7eae937aaa2d,渡邊 英次 / Eiji Watanabe,2024-05-28 総務部 業務整理MTG,2024-05-28T11:00:00.0000000,2024-05-28T12:30:00.0000000,Microsoft Teams Meeting,総務部 本部
+88f2730e-d457-45c3-b02d-7eae937aaa2d,渡邊 英次 / Eiji Watanabe,2024-05-28 広報戦略部 HP会議,2024-05-28T10:00:00.0000000,2024-05-28T11:00:00.0000000,Microsoft Teams Meeting,広報戦略部
+88f2730e-d457-45c3-b02d-7eae937aaa2d,渡邊 英次 / Eiji Watanabe,Canceled: 2024-05-28 広報戦略部 HP会議,2024-05-28T10:00:00.0000000,2024-05-28T10:30:00.0000000,Microsoft Teams Meeting,永淵 翔大 / Shota Nagafuchi
+88f2730e-d457-45c3-b02d-7eae937aaa2d,渡邊 英次 / Eiji Watanabe,2024-05-29 Teams & Notion台帳作成会議,2024-05-29T00:00:00.0000000,2024-05-29T01:00:00.0000000,Microsoft Teams Meeting,情報インフラ部 京都支部
+88f2730e-d457-45c3-b02d-7eae937aaa2d,渡邊 英次 / Eiji Watanabe,2024-05-29 Teams台帳作成会議,2024-05-29T08:00:00.0000000,2024-05-29T09:00:00.0000000,Microsoft Teams Meeting,情報インフラ部 京都支部
+88f2730e-d457-45c3-b02d-7eae937aaa2d,渡邊 英次 / Eiji Watanabe,,2024-05-26T12:00:00.0000000,2024-05-26T14:00:00.0000000,Microsoft Teams Meeting,OB会
+88f2730e-d457-45c3-b02d-7eae937aaa2d,渡邊 英次 / Eiji Watanabe,2024-05-29 第6回 提案書会議,2024-05-29T10:30:00.0000000,2024-05-29T11:30:00.0000000,Microsoft Teams Meeting,提案書事業
+28fd6bf6-fcec-4b68-be37-104d5eb3c021,渡邊 雅士 / Masashi Watanabe,高林さん採用面接,2024-05-30T04:00:00.0000000,2024-05-30T06:00:00.0000000,Microsoft Teams Meeting,OB会
+28fd6bf6-fcec-4b68-be37-104d5eb3c021,渡邊 雅士 / Masashi Watanabe,2024-05-28 総務部 業務整理MTG,2024-05-28T11:00:00.0000000,2024-05-28T12:30:00.0000000,Microsoft Teams Meeting,総務部 本部
+28fd6bf6-fcec-4b68-be37-104d5eb3c021,渡邊 雅士 / Masashi Watanabe,,2024-05-26T12:00:00.0000000,2024-05-26T14:00:00.0000000,Microsoft Teams Meeting,OB会
+28fd6bf6-fcec-4b68-be37-104d5eb3c021,渡邊 雅士 / Masashi Watanabe,渡邊 ~16:00まで　東京事務所勤務可能,2024-06-01T00:00:00.0000000,2024-06-02T00:00:00.0000000,,渡邊 雅士 / Masashi Watanabe
+28fd6bf6-fcec-4b68-be37-104d5eb3c021,渡邊 雅士 / Masashi Watanabe,渡邊 休み,2024-05-31T00:00:00.0000000,2024-06-01T00:00:00.0000000,,渡邊 雅士 / Masashi Watanabe
+28fd6bf6-fcec-4b68-be37-104d5eb3c021,渡邊 雅士 / Masashi Watanabe,渡邊 19:30~23:00 東京事務所,2024-05-30T00:00:00.0000000,2024-05-31T00:00:00.0000000,,渡邊 雅士 / Masashi Watanabe
+28fd6bf6-fcec-4b68-be37-104d5eb3c021,渡邊 雅士 / Masashi Watanabe,渡邊 休み,2024-05-29T00:00:00.0000000,2024-05-30T00:00:00.0000000,,渡邊 雅士 / Masashi Watanabe
+28fd6bf6-fcec-4b68-be37-104d5eb3c021,渡邊 雅士 / Masashi Watanabe,渡邊 16:00~23:00 東京事務所,2024-05-28T00:00:00.0000000,2024-05-29T00:00:00.0000000,,渡邊 雅士 / Masashi Watanabe
+28fd6bf6-fcec-4b68-be37-104d5eb3c021,渡邊 雅士 / Masashi Watanabe,渡邊 17:30~23:00東京事務所（途中で私用が入ります。）,2024-05-27T00:00:00.0000000,2024-05-28T00:00:00.0000000,,渡邊 雅士 / Masashi Watanabe
+28fd6bf6-fcec-4b68-be37-104d5eb3c021,渡邊 雅士 / Masashi Watanabe,渡邊　休み,2024-05-26T00:00:00.0000000,2024-05-27T00:00:00.0000000,,渡邊 雅士 / Masashi Watanabe

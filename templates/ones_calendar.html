@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.13/index.global.min.js'></script>
+    <style>
+        .organizer-calendar {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .calendar-container {
+            margin-right: 20px;
+            width: calc(100%); /* Adjust width as needed */
+        }
+        .calendar-title {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 10px;
+            word-break: break-all;
+        }
+        .fc-event-cancelled {
+            color: gray !important;
+            text-decoration: line-through;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            fetch('/get_accounts')
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    const select = document.getElementById('account-select');
+                    data.forEach(account => {
+                        const option = document.createElement('option');
+                        option.value = account.id;
+                        option.textContent = account.displayName;
+                        select.appendChild(option);
+                    });
+                });
+        };
+    </script>
+</head>
+<body>
+    <a href="/">全体表示</a>
+    <h1>個別のアカウントのカレンダー表示</h1>
+    <select id="account-select">
+   <!-- JavaScriptでオプションが追加されます -->
+   </select>
+   <button id="fetchCalendar">カレンダーを取得</button>
+    <div id='calendar-wrapper'></div>
+    
+    <script>
+        document.getElementById('fetchCalendar').addEventListener('click', function() {
+          const userId = document.getElementById('account-select').value;
+          fetch(`/get_each_calendar/${userId}`)
+            .then(response => response.json())
+            .then(data => {
+                        const organizers = {};
+    
+                        // Group events by organizer
+                        data.forEach(event => {
+                            const organizer = event.organizer || "Unknown Organizer";
+                            if (!organizers[organizer]) {
+                                organizers[organizer] = [];
+                            }
+                            organizers[organizer].push(event);
+                        });
+    
+                        // Create calendars for each organizer
+                        const calendarWrapper = document.getElementById('calendar-wrapper');
+                        for (const [organizer, events] of Object.entries(organizers)) {
+                            const calendarContainer = document.createElement('div');
+                            calendarContainer.classList.add('calendar-container');
+                            
+                            const organizerTitle = document.createElement('div');
+                            organizerTitle.classList.add('calendar-title');
+                            organizerTitle.textContent = organizer;
+                            calendarContainer.appendChild(organizerTitle);
+                            
+                            const calendarEl = document.createElement('div');
+                            calendarEl.classList.add('organizer-calendar');
+                            calendarContainer.appendChild(calendarEl);
+                            
+                            calendarWrapper.appendChild(calendarContainer);
+    
+                            const calendar = new FullCalendar.Calendar(calendarEl, {
+                                initialView: 'timeGridWeek',
+                                events: events.map(event => ({
+                                    ...event,
+                                    className: event.isCancelled ? 'fc-event-cancelled' : ''
+                                })),
+                                headerToolbar: {
+                                    left: '',
+                                    center: '',
+                                    right: ''
+                                }
+                            });
+    
+                            calendar.render();
+                        }
+    
+            });
+    
+        });
+        </script>
+</body>
+</html>

@@ -1,4 +1,11 @@
 
+# Start Up
+
+docker build -t aibos_calender .      
+
+docker run -p 5000:5000 aibos_calender
+
+then now access to http://localhost:5000
 
 
 
@@ -14,11 +21,4 @@ products:
 description: "Python daemon console app using MSAL Python to get an access token and call Microsoft Graph (client secret variation)."
 ---
 
-# Start Up
-
-docker build -t aibos_calender .      
-
-docker run -p 5000:5000 aibos_calender
-
-then now access to http://localhost:5000
 

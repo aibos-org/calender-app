@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      FLASK_RUN_PORT: 5000
+      MS_CLIENT_ID: '875b0e15-4d0d-4405-96c0-66bea63cc2a8'
+      MS_CLIENT_SECRET: 'f7O8Q~AVsyQ9K4rdgCCrKVfDGp5pCzFBqYcwkcQv'
+    volumes:
+      - .:/app

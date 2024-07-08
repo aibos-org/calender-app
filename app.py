@@ -170,6 +170,8 @@ def get_events():
                     params=params
                 ).json()
                 for event in calendar_data.get('value', []):
+                    online_meeting = event.get("onlineMeeting")
+                    join_url = online_meeting.get("joinUrl") if online_meeting else None #会議リンクを追加
                     all_calendar_data.append({
                         "organizer": user["displayName"],
                         "title": event.get("subject"),
@@ -178,7 +180,8 @@ def get_events():
                         "description": event.get("bodyPreview"),
                         "location": event.get("location", {}).get("displayName"),
                         "organizerEmail": event.get("organizer", {}).get("emailAddress", {}).get("name"),
-                        "isCancelled": event.get("isCancelled", False)  # Get the isCancelled flag
+                        "isCancelled": event.get("isCancelled", False),  # Get the isCancelled flag
+                        "joinURL": join_url
                     })
         
         return jsonify(all_calendar_data)
@@ -221,7 +224,7 @@ def get_events_office():
                         "description": event.get("bodyPreview"),
                         "location": event.get("location", {}).get("displayName"),
                         "organizerEmail": event.get("organizer", {}).get("emailAddress", {}).get("name"),
-                        "isCancelled": event.get("isCancelled", False)  # Get the isCancelled flag
+                        "isCancelled": event.get("isCancelled", False),  # Get the isCancelled flag
                     })
         
         return jsonify(all_calendar_data)

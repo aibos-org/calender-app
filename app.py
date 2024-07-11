@@ -5,6 +5,8 @@ import msal
 from flask import Flask, render_template, jsonify, redirect, url_for, session, request
 from authlib.integrations.flask_client import OAuth
 import os
+from functools import wraps
+import jwt
 
 app = Flask(__name__)
 
@@ -29,6 +31,8 @@ oauth.register(
 
 # end Oauth
 
+# jwt
+app.config['JWT_SECRET_KEY'] = os.environ.get('JWT_SECRET_KEY')
 
 # Load configuration
 config = json.load(open("parameters.json"))
@@ -51,14 +55,35 @@ if not result:
 
 # トークンチェックデコレータ
 def login_required(f):
+    @wraps(f)
     def decorated_function(*args, **kwargs):
+        print("===========")
         if 'user' not in session:
             return redirect(url_for('login'))
-        return f(*args, **kwargs)
+        try:
+            data = jwt.decode(session['user'], app.config['JWT_SECRET_KEY'], algorithms=['HS256'])
+        except jwt.ExpiredSignatureError:
+            return redirect(url_for('login'))
+        print("===========")
+        print(data)
+        if authorization(data['mail']):
+            return f(*args, **kwargs)
+        else:
+            return redirect(url_for('not_aibos_user'))
+
     return decorated_function
 
 
+def authorization(mail):
+    response = oauth.microsoft.get('https://graph.microsoft.com/v1.0/me')
+    user_info = response.json()
+    for account in user_info['value']:
+        if account['mail'] == mail:
+            return True
+    return False
+
 @app.route('/')
+@login_required
 def index():
     if 'user' not in session:
         return redirect(url_for('login'))
@@ -81,7 +106,10 @@ def authorized():
     response = oauth.microsoft.get('https://graph.microsoft.com/v1.0/me')
     user_info = response.json()
     
-    session['user'] = user_info
+    # user_infoをjwtに変換
+    jwted_user_info = jwt.encode(user_info, app.config['JWT_SECRET_KEY'], algorithm='HS256')
+
+    session['user'] = jwted_user_info
     mail = user_info['mail']
     
     
@@ -102,6 +130,7 @@ def not_aibos_user():
     return render_template('not_aibos_user.html')
 
 @app.route('/ones_calendar')
+@login_required
 def ones_calendar():
     if 'user' not in session:
         return redirect(url_for('login'))

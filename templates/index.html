@@ -34,6 +34,7 @@
         }
     </style>
     <script>
+
         document.addEventListener('DOMContentLoaded', function() {
             fetch('/get_events')
                 .then(response => response.json())
@@ -48,6 +49,7 @@
                         }
                         organizers[organizer].push(event);
                     });
+                    
 
                     // Create calendars for each organizer
                     const calendarWrapper = document.getElementById('calendar-wrapper');
@@ -66,56 +68,29 @@
                         
                         calendarWrapper.appendChild(calendarContainer);
 
+
+                        class ExtendedEvent extends FullCalendar.Event {
+                          constructor(eventInput, displayUrl) {
+                            super(eventInput);
+                            this.displayUrl = displayUrl; // displayUrlプロパティを追加
+                          }
+                        }
+                        
+                        // イベントデータを拡張イベントオブジェクトに変換
+                        const extendedEvents = events.map(event => new ExtendedEvent(event, event.joinURL));
+                        
                         const calendar = new FullCalendar.Calendar(calendarEl, {
-                            initialView: 'timeGridWeek',
-                            events: events.map(event => ({
-                                ...event,
-                                className: event.isCancelled ? 'fc-event-cancelled' : ''
-                            })),
-                            headerToolbar: {
-                                left: '',
-                                center: '',
-                                right: ''
-                            },
-                            eventClick: function(info) {
-                                // Debugging step: Display an alert when an event is clicked
-                                alert(`Event: ${info.event.title}`);
-
-                                // Create a pop-up with event details
-                                const popup = document.createElement('div');
-                                popup.classList.add('popup');
-
-                                const title = document.createElement('h3');
-                                title.textContent = info.event.title;
-                                popup.appendChild(title);
-
-                                const start = document.createElement('p');
-                                start.textContent = `Start: ${info.event.start}`;
-                                popup.appendChild(start);
-
-                                const end = document.createElement('p');
-                                end.textContent = `End: ${info.event.end}`;
-                                popup.appendChild(end);
-
-                                const description = document.createElement('p');
-                                description.textContent = `Description: ${info.event.extendedProps.description}`;
-                                popup.appendChild(description);
-
-                                // Position the popup near the clicked event
-                                popup.style.top = `${info.jsEvent.pageY}px`;
-                                popup.style.left = `${info.jsEvent.pageX}px`;
-                                popup.style.display = 'block';
-
-                                // Add the popup to the body
-                                document.body.appendChild(popup);
-
-                                // Remove the popup when clicked outside
-                                document.addEventListener('click', function(event) {
-                                    if (!popup.contains(event.target)) {
-                                        popup.remove();
-                                    }
-                                }, { once: true });
-                            }
+                          initialView: 'timeGridWeek',
+                          events: extendedEvents,
+                          headerToolbar: {
+                            left: '',
+                            center: '',
+                            right: ''
+                          },
+                          eventClick: function(info) {
+                            // 拡張されたイベントオブジェクトのdisplayUrlプロパティにアクセス
+                            alert(`Event: ${info.event.title} ${info.event.start} ${info.event.end} ${info.event.extendedProps.displayUrl}`);
+                          }
                         });
 
                         calendar.render();

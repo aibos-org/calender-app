@@ -24,6 +24,14 @@
             color: gray !important;
             text-decoration: line-through;
         }
+        .popup {
+            position: absolute;
+            background-color: white;
+            border: 1px solid black;
+            padding: 10px;
+            z-index: 1000;
+            display: none;
+        }
     </style>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -68,6 +76,45 @@
                                 left: '',
                                 center: '',
                                 right: ''
+                            },
+                            eventClick: function(info) {
+                                // Debugging step: Display an alert when an event is clicked
+                                alert(`Event: ${info.event.title}`);
+
+                                // Create a pop-up with event details
+                                const popup = document.createElement('div');
+                                popup.classList.add('popup');
+
+                                const title = document.createElement('h3');
+                                title.textContent = info.event.title;
+                                popup.appendChild(title);
+
+                                const start = document.createElement('p');
+                                start.textContent = `Start: ${info.event.start}`;
+                                popup.appendChild(start);
+
+                                const end = document.createElement('p');
+                                end.textContent = `End: ${info.event.end}`;
+                                popup.appendChild(end);
+
+                                const description = document.createElement('p');
+                                description.textContent = `Description: ${info.event.extendedProps.description}`;
+                                popup.appendChild(description);
+
+                                // Position the popup near the clicked event
+                                popup.style.top = `${info.jsEvent.pageY}px`;
+                                popup.style.left = `${info.jsEvent.pageX}px`;
+                                popup.style.display = 'block';
+
+                                // Add the popup to the body
+                                document.body.appendChild(popup);
+
+                                // Remove the popup when clicked outside
+                                document.addEventListener('click', function(event) {
+                                    if (!popup.contains(event.target)) {
+                                        popup.remove();
+                                    }
+                                }, { once: true });
                             }
                         });
 

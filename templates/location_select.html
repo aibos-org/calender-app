@@ -30,15 +30,13 @@
             fetch('/location')
                 .then(response => response.json())
                 .then(data => {
-                    console.log(data);
                     const select = document.getElementById('location-select');
-                    data.forEach(account => {
+                    data.forEach(location => {
                         const option = document.createElement('option');
-                        option.value = account.location;
-                        option.textContent = account.location;
+                        option.value = location;
+                        option.textContent = location;
                         select.appendChild(option);
                     });
-                    console.log(select)
                 });
         };
     </script>
@@ -62,29 +60,18 @@ documentとはHTMLの要素を格納したオブジェクトのこと
     <script>
         document.getElementById('fetchCalendar').addEventListener('click', function() {
           const locationId = document.getElementById('location-select').value;
-          fetch(`/get_events`)
+          fetch(`/get_events_office/`+locationId)
             .then(response => response.json())
             .then(data => {
-                        const locations = {};
-    
-                        // Group events by location
-                        data.forEach(event => {
-                            const location = event.location || "Unknown Location";
-                            if (!locations[location]) {
-                                locations[location] = [];
-                            }
-                            locations[location].push(event);
-                        });
-    
                         // Create calendars for each location
                         const calendarWrapper = document.getElementById('calendar-wrapper');
-                        for (const [location, events] of Object.entries(locations)) {
+
                             const calendarContainer = document.createElement('div');
                             calendarContainer.classList.add('calendar-container');
                             
                             const locationTitle = document.createElement('div');
                             locationTitle.classList.add('calendar-title');
-                            locationTitle.textContent = location;
+                            locationTitle.textContent = locationId;
                             calendarContainer.appendChild(locationTitle);
                             
                             const calendarEl = document.createElement('div');
@@ -95,7 +82,7 @@ documentとはHTMLの要素を格納したオブジェクトのこと
     
                             const calendar = new FullCalendar.Calendar(calendarEl, {
                                 initialView: 'timeGridWeek',
-                                events: events.map(event => ({
+                                events: data.map(event => ({
                                     ...event,
                                     className: event.isCancelled ? 'fc-event-cancelled' : ''
                                 })),
@@ -107,7 +94,7 @@ documentとはHTMLの要素を格納したオブジェクトのこと
                             });
     
                             calendar.render();
-                        }
+                        
     
             });
     

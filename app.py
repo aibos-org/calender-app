@@ -150,8 +150,6 @@ def get_accounts():
     
 @app.route('/get_each_calendar/<user_id>')
 def get_each_calendar(user_id):
-    users_endpoint = "https://graph.microsoft.com/v1.0/users"
-        
     all_calendar_data = []
     calendar_endpoint = f"https://graph.microsoft.com/v1.0/users/{user_id}/calendar/events"
 
@@ -177,12 +175,6 @@ def get_each_calendar(user_id):
 def get_events():
     if "access_token" in result:
         users_endpoint = "https://graph.microsoft.com/v1.0/users"
-        start_date = '2024-06-20T00:00:00Z'
-        end_date = '2024-06-30T23:59:59Z' 
-        params = {
-            'startDateTime': start_date,
-            'endDateTime': end_date,
-        }
         users_data = requests.get(
             users_endpoint,
             headers={'Authorization': 'Bearer ' + result['access_token']},
@@ -196,7 +188,6 @@ def get_events():
                 calendar_data = requests.get(
                     calendar_endpoint,
                     headers={'Authorization': 'Bearer ' + result['access_token']},
-                    params=params
                 ).json()
                 for event in calendar_data.get('value', []):
                     all_calendar_data.append({
@@ -239,89 +230,45 @@ def get_events():
     
 #     return jsonify(all_calendar_data)        
 
-# @app.route('/get_events_office/<location>')
-# def get_events_office(location):
-#     if "access_token" in result:
-#         users_endpoint = "https://graph.microsoft.com/v1.0/users/{location}/calendar/events"
-#         start_date = '2024-06-20T00:00:00Z'  # 取得開始日時
-#         end_date = '2024-06-30T23:59:59Z' 
-#         params = {
-#             'startDateTime': start_date,
-#             'endDateTime': end_date,
-#         }
-#         users_data = requests.get(
-#             users_endpoint,
-#             headers={'Authorization': 'Bearer ' + result['access_token']},
-#         ).json()
-        
-#         all_calendar_data = []
-#         if "value" in users_data:
-#             for user in users_data["value"]:
-#                 user_id = user["id"]
-#                 calendar_endpoint = f"https://graph.microsoft.com/v1.0/users/{user_id}/calendar/events"
-#                 calendar_data = requests.get(
-#                     calendar_endpoint,
-#                     headers={'Authorization': 'Bearer ' + result['access_token']},
-#                     params=params
-#                 ).json()
-#                 for event in calendar_data.get('value', []):
-#                     all_calendar_data.append({
-#                         "organizer": user["displayName"],
-#                         "title": event.get("subject"),
-#                         "start": event.get("start", {}).get("dateTime"),
-#                         "end": event.get("end", {}).get("dateTime"),
-#                         "description": event.get("bodyPreview"),
-#                         "location": event.get("location", {}).get("displayName"),
-#                         "organizerEmail": event.get("organizer", {}).get("emailAddress", {}).get("name"),
-#                         "isCancelled": event.get("isCancelled", False)  # Get the isCancelled flag
-#                     })
-        
-#         return jsonify(all_calendar_data)
-#     else:
-#         return jsonify([]), 400
+@app.route('/get_events_office/<location>')
+def get_events_office(location):
+    if "access_token" in result:
+        users_endpoint = "https://graph.microsoft.com/v1.0/users"
+        users_data = requests.get(
+            users_endpoint,
+            headers={'Authorization': 'Bearer ' + result['access_token']},
+        ).json()
+      
+        all_calendar_data = []
+        if "value" in users_data:
+            for user in users_data["value"]:
+                user_id = user["id"]
+                calendar_endpoint = f"https://graph.microsoft.com/v1.0/users/{user_id}/calendar/events?$filter=location/displayName eq '{location}'"
+                calendar_data = requests.get(
+                    calendar_endpoint,
+                    headers={'Authorization': 'Bearer ' + result['access_token']}
+                ).json()
+                for event in calendar_data.get('value', []):
+                    all_calendar_data.append({
+                        "organizer": user["displayName"],
+                        "title": event.get("subject"),
+                        "start": event.get("start", {}).get("dateTime"),
+                        "end": event.get("end", {}).get("dateTime"),
+                        "description": event.get("bodyPreview"),
+                        "location": event.get("location", {}).get("displayName"),
+                        "organizerEmail": event.get("organizer", {}).get("emailAddress", {}).get("name"),
+                        "isCancelled": event.get("isCancelled", False)  # Get the isCancelled flag
+                    })
+      
+        return jsonify(all_calendar_data)
+    else:
+        return jsonify([]), 400
 
 
 
 @app.route('/location')
 def get_events_location():
-    if "access_token" in result:
-        users_endpoint = "https://graph.microsoft.com/v1.0/users"
-        start_date = '2024-06-20T00:00:00Z'
-        end_date = '2024-06-30T23:59:59Z' 
-        params = {
-            'startDateTime': start_date,
-            'endDateTime': end_date,
-        }
-        users_data = requests.get(
-            users_endpoint,
-            headers={'Authorization': 'Bearer ' + result['access_token']},
-        ).json()
-        
-        all_calendar_data = []
-        if "value" in users_data:
-            for user in users_data["value"]:
-                user_id = user["id"]
-                calendar_endpoint = f"https://graph.microsoft.com/v1.0/users/{user_id}/calendar/events"
-                calendar_data = requests.get(
-                    calendar_endpoint,
-                    headers={'Authorization': 'Bearer ' + result['access_token']},
-                    params=params
-                ).json()
-                for event in calendar_data.get('value', []):
-                    all_calendar_data.append({
-                        # "organizer": user["displayName"],
-                        # "title": event.get("subject"),
-                        # "start": event.get("start", {}).get("dateTime"),
-                        # "end": event.get("end", {}).get("dateTime"),
-                        # "description": event.get("bodyPreview"),
-                        "location": event.get("location", {}).get("displayName"),
-                        # "organizerEmail": event.get("organizer", {}).get("emailAddress", {}).get("name"),
-                        # "isCancelled": event.get("isCancelled", False)  # Get the isCancelled flag
-                    })
-        unique_calendar_data = remove_duplicates(all_calendar_data)
-        return jsonify(unique_calendar_data)
-    else:
-        return jsonify([]), 400
+    return jsonify(['京都事務所', '京都御所','京都リモート','Kyoto'])
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)

@@ -60,12 +60,14 @@ documentとはHTMLの要素を格納したオブジェクトのこと
     <script>
         document.getElementById('fetchCalendar').addEventListener('click', function() {
           const locationId = document.getElementById('location-select').value;
+
           fetch(`/get_events_office/`+locationId)
             .then(response => response.json())
             .then(data => {
                         // Create calendars for each location
                         const calendarWrapper = document.getElementById('calendar-wrapper');
 
+                            calendarWrapper.innerHTML = ''
                             const calendarContainer = document.createElement('div');
                             calendarContainer.classList.add('calendar-container');
                             

@@ -68,16 +68,12 @@
                         
                         calendarWrapper.appendChild(calendarContainer);
 
-
-                        class ExtendedEvent extends FullCalendar.Event {
-                          constructor(eventInput, displayUrl) {
-                            super(eventInput);
-                            this.displayUrl = displayUrl; // displayUrlプロパティを追加
-                          }
-                        }
                         
                         // イベントデータを拡張イベントオブジェクトに変換
-                        const extendedEvents = events.map(event => new ExtendedEvent(event, event.joinURL));
+                        const extendedEvents = events.map(event => ({
+                            ...event, 
+                            displayUrl: event.joinURL
+                         }));
                         
                         const calendar = new FullCalendar.Calendar(calendarEl, {
                           initialView: 'timeGridWeek',
@@ -88,11 +84,13 @@
                             right: ''
                           },
                           eventClick: function(info) {
+                            console.log(info)
+                            console.log(info.event)
+                            console.log(info.event.extendedProps)
                             // 拡張されたイベントオブジェクトのdisplayUrlプロパティにアクセス
-                            alert(`Event: ${info.event.title} ${info.event.start} ${info.event.end} ${info.event.extendedProps.displayUrl}`);
+                            alert(`Event: ${info.event.title} ${info.event.start} ${info.event.extendedProps.displayUrl}`);
                           }
                         });
-
                         calendar.render();
                     }
                 });

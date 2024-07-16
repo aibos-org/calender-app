@@ -2,7 +2,10 @@ version: '3.8'
 
 services:
   web:
-    build: .
+    image: 058264211830.dkr.ecr.ap-northeast-1.amazonaws.com/aibos_calender
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "5000:5000"
     environment:

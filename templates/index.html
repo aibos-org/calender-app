@@ -60,15 +60,20 @@
 
                         const calendar = new FullCalendar.Calendar(calendarEl, {
                             initialView: 'timeGridWeek',
+                            headerToolbar: {
+                                left: 'prev,next today',
+                                center: 'title',
+                                right: 'timeGridWeek,timeGridDay'
+                            },
+                            navLinks: true,
+                            editable: true,
+                            selectable: true,
+                            nowIndicator: true,
+                            weekNumbers: true,
                             events: events.map(event => ({
                                 ...event,
                                 className: event.isCancelled ? 'fc-event-cancelled' : ''
                             })),
-                            headerToolbar: {
-                                left: '',
-                                center: '',
-                                right: ''
-                            }
                         });
 
                         calendar.render();

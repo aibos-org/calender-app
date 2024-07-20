@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.13/index.global.min.js'></script>
+    <style>
+        .location-calendar {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .calendar-container {
+            margin-right: 20px;
+            width: calc(100%); /* Adjust width as needed */
+        }
+        .calendar-title {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 10px;
+            word-break: break-all;
+        }
+        .fc-event-cancelled {
+            color: gray !important;
+            text-decoration: line-through;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            fetch('/location')
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    const select = document.getElementById('location-select');
+                    data.forEach(account => {
+                        const option = document.createElement('option');
+                        option.value = account.location;
+                        option.textContent = account.location;
+                        select.appendChild(option);
+                    });
+                    console.log(select)
+                });
+        };
+    </script>
+</head>
+<!--
+documentとはHTMLの要素を格納したオブジェクトのこと
+ document.getElementById(id)で HTML内の要素から指定idのDOMを取得
+ document.createElement('option')でHTMLのoptionタグを生成
+ select.appendChildで生成したoptionタグを挿入（HTMLに反映）
+
+-->
+<body>
+    <a href="/">全体表示</a>
+    <h1>事務所ごとの予定</h1>
+    <select id="location-select">
+   <!-- JavaScriptでオプションが追加されます -->
+   </select>
+   <button id="fetchCalendar">カレンダーを取得</button>
+    <div id='calendar-wrapper'></div>
+    
+    <script>
+        document.getElementById('fetchCalendar').addEventListener('click', function() {
+          const locationId = document.getElementById('location-select').value;
+          fetch(`/get_events`)
+            .then(response => response.json())
+            .then(data => {
+                        const locations = {};
+    
+                        // Group events by location
+                        data.forEach(event => {
+                            const location = event.location || "Unknown Location";
+                            if (!locations[location]) {
+                                locations[location] = [];
+                            }
+                            locations[location].push(event);
+                        });
+    
+                        // Create calendars for each location
+                        const calendarWrapper = document.getElementById('calendar-wrapper');
+                        for (const [location, events] of Object.entries(locations)) {
+                            const calendarContainer = document.createElement('div');
+                            calendarContainer.classList.add('calendar-container');
+                            
+                            const locationTitle = document.createElement('div');
+                            locationTitle.classList.add('calendar-title');
+                            locationTitle.textContent = location;
+                            calendarContainer.appendChild(locationTitle);
+                            
+                            const calendarEl = document.createElement('div');
+                            calendarEl.classList.add('location-calendar');
+                            calendarContainer.appendChild(calendarEl);
+                            
+                            calendarWrapper.appendChild(calendarContainer);
+    
+                            const calendar = new FullCalendar.Calendar(calendarEl, {
+                                initialView: 'timeGridWeek',
+                                events: events.map(event => ({
+                                    ...event,
+                                    className: event.isCancelled ? 'fc-event-cancelled' : ''
+                                })),
+                                headerToolbar: {
+                                    left: '',
+                                    center: '',
+                                    right: ''
+                                }
+                            });
+    
+                            calendar.render();
+                        }
+    
+            });
+    
+        });
+        </script>
+</body>
+</html>

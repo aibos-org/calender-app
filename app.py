@@ -69,6 +69,18 @@ def remove_duplicates(events):
     return unique_events
 
 
+# /locationで使用する。リストの重複を取り除く関数
+def remove_duplicates(events):
+    seen_location = set()
+    unique_events = []
+    for event in events:
+        location = event['location']
+        if location not in seen_location:
+            seen_location.add(location)
+            unique_events.append(event)
+    return unique_events
+
+
 
 @app.route('/')
 def index():
@@ -116,8 +128,19 @@ def authorized():
         for account in users_data['value']:
             if account['mail'] == mail:
                 return redirect(url_for('location_select'))
+            
+    if "access_token" in result:
+        users_endpoint = "https://graph.microsoft.com/v1.0/users"
+        users_data = requests.get(
+            users_endpoint,
+            headers={'Authorization': 'Bearer ' + result['access_token']},
+        ).json()
+        for account in users_data['value']:
+            if account['mail'] == mail:
+                return redirect(url_for('location_select'))
 
     return redirect(url_for('not_aibos_user'))
+
 
 
 @app.route('/not_aibos_user')
@@ -129,6 +152,12 @@ def ones_calendar():
     if 'user' not in session:
         return redirect(url_for('login'))
     return render_template('ones_calendar.html')
+
+@app.route('/location_select')
+def location_select():
+    if 'user' not in session:
+        return redirect(url_for('login'))
+    return render_template('location_select.html')
 
 @app.route('/location_select')
 def location_select():
@@ -199,6 +228,8 @@ def get_events():
                     params=params
                 ).json()
                 for event in calendar_data.get('value', []):
+                    online_meeting = event.get("onlineMeeting")
+                    join_url = online_meeting.get("joinUrl") if online_meeting else None #会議リンクを追加,
                     all_calendar_data.append({
                         "organizer": user["displayName"],
                         "title": event.get("subject"),
@@ -207,78 +238,14 @@ def get_events():
                         "description": event.get("bodyPreview"),
                         "location": event.get("location", {}).get("displayName"),
                         "organizerEmail": event.get("organizer", {}).get("emailAddress", {}).get("name"),
-                        "isCancelled": event.get("isCancelled", False)  # Get the isCancelled flag
+                        "isCancelled": event.get("isCancelled", False) , # Get the isCancelled flag
+                        "joinURL": join_url
                     })
         
         return jsonify(all_calendar_data)
     else:
         return jsonify([]), 400
     
-# @app.route('/get_each_location_calendar/<location_id>')
-# def get_each_location_calendar(location_id):
-#     users_endpoint = "https://graph.microsoft.com/v1.0/users"
-        
-#     all_calendar_data = []
-#     calendar_endpoint = f"https://graph.microsoft.com/v1.0/users/{location_id}/calendar/events"
-
-#     calendar_data = requests.get(
-#         calendar_endpoint,
-#         headers={'Authorization': 'Bearer ' + result['access_token']},
-
-#     ).json()
-#     for event in calendar_data.get('value', []):
-#         all_calendar_data.append({
-#             "title": event.get("subject"),
-#             "start": event.get("start", {}).get("dateTime"),
-#             "end": event.get("end", {}).get("dateTime"),
-#             "description": event.get("bodyPreview"),
-#             "location": event.get("location", {}).get("displayName"),
-#             "organizerEmail": event.get("organizer", {}).get("emailAddress", {}).get("name"),
-#             "isCancelled": event.get("isCancelled", False)  # Get the isCancelled flag
-#         })
-    
-#     return jsonify(all_calendar_data)        
-
-# @app.route('/get_events_office/<location>')
-# def get_events_office(location):
-#     if "access_token" in result:
-#         users_endpoint = "https://graph.microsoft.com/v1.0/users/{location}/calendar/events"
-#         start_date = '2024-06-20T00:00:00Z'  # 取得開始日時
-#         end_date = '2024-06-30T23:59:59Z' 
-#         params = {
-#             'startDateTime': start_date,
-#             'endDateTime': end_date,
-#         }
-#         users_data = requests.get(
-#             users_endpoint,
-#             headers={'Authorization': 'Bearer ' + result['access_token']},
-#         ).json()
-        
-#         all_calendar_data = []
-#         if "value" in users_data:
-#             for user in users_data["value"]:
-#                 user_id = user["id"]
-#                 calendar_endpoint = f"https://graph.microsoft.com/v1.0/users/{user_id}/calendar/events"
-#                 calendar_data = requests.get(
-#                     calendar_endpoint,
-#                     headers={'Authorization': 'Bearer ' + result['access_token']},
-#                     params=params
-#                 ).json()
-#                 for event in calendar_data.get('value', []):
-#                     all_calendar_data.append({
-#                         "organizer": user["displayName"],
-#                         "title": event.get("subject"),
-#                         "start": event.get("start", {}).get("dateTime"),
-#                         "end": event.get("end", {}).get("dateTime"),
-#                         "description": event.get("bodyPreview"),
-#                         "location": event.get("location", {}).get("displayName"),
-#                         "organizerEmail": event.get("organizer", {}).get("emailAddress", {}).get("name"),
-#                         "isCancelled": event.get("isCancelled", False)  # Get the isCancelled flag
-#                     })
-        
-#         return jsonify(all_calendar_data)
-#     else:
-#         return jsonify([]), 400
 
 
 
@@ -286,6 +253,7 @@ def get_events():
 def get_events_location():
     if "access_token" in result:
         users_endpoint = "https://graph.microsoft.com/v1.0/users"
+        start_date = '2024-06-20T00:00:00Z'
         start_date = '2024-06-20T00:00:00Z'
         end_date = '2024-06-30T23:59:59Z' 
         params = {
@@ -309,15 +277,19 @@ def get_events_location():
                 ).json()
                 for event in calendar_data.get('value', []):
                     all_calendar_data.append({
-                        # "organizer": user["displayName"],
-                        # "title": event.get("subject"),
-                        # "start": event.get("start", {}).get("dateTime"),
-                        # "end": event.get("end", {}).get("dateTime"),
-                        # "description": event.get("bodyPreview"),
+                        # # "organizer": user["displayName"],
+                        # # "title": event.get("subject"),
+                        # # "start": event.get("start", {}).get("dateTime"),
+                        # # "end": event.get("end", {}).get("dateTime"),
+                        # # "description": event.get("bodyPreview"),
                         "location": event.get("location", {}).get("displayName"),
                         # "organizerEmail": event.get("organizer", {}).get("emailAddress", {}).get("name"),
                         # "isCancelled": event.get("isCancelled", False)  # Get the isCancelled flag
+                        # "organizerEmail": event.get("organizer", {}).get("emailAddress", {}).get("name"),
+                        # "isCancelled": event.get("isCancelled", False)  # Get the isCancelled flag
                     })
+        unique_calendar_data = remove_duplicates(all_calendar_data)
+        return jsonify(unique_calendar_data)
         unique_calendar_data = remove_duplicates(all_calendar_data)
         return jsonify(unique_calendar_data)
     else:

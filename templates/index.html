@@ -24,8 +24,17 @@
             color: gray !important;
             text-decoration: line-through;
         }
+        .popup {
+            position: absolute;
+            background-color: white;
+            border: 1px solid black;
+            padding: 10px;
+            z-index: 1000;
+            display: none;
+        }
     </style>
     <script>
+
         document.addEventListener('DOMContentLoaded', function() {
             fetch('/get_events')
                 .then(response => response.json())
@@ -40,6 +49,7 @@
                         }
                         organizers[organizer].push(event);
                     });
+                    
 
                     // Create calendars for each organizer
                     const calendarWrapper = document.getElementById('calendar-wrapper');
@@ -58,19 +68,29 @@
                         
                         calendarWrapper.appendChild(calendarContainer);
 
+                        
+                        // イベントデータを拡張イベントオブジェクトに変換
+                        const extendedEvents = events.map(event => ({
+                            ...event, 
+                            displayUrl: event.joinURL
+                         }));
+                        
                         const calendar = new FullCalendar.Calendar(calendarEl, {
-                            initialView: 'timeGridWeek',
-                            events: events.map(event => ({
-                                ...event,
-                                className: event.isCancelled ? 'fc-event-cancelled' : ''
-                            })),
-                            headerToolbar: {
-                                left: '',
-                                center: '',
-                                right: ''
-                            }
+                          initialView: 'timeGridWeek',
+                          events: extendedEvents,
+                          headerToolbar: {
+                            left: '',
+                            center: '',
+                            right: ''
+                          },
+                          eventClick: function(info) {
+                            console.log(info)
+                            console.log(info.event)
+                            console.log(info.event.extendedProps)
+                            // 拡張されたイベントオブジェクトのdisplayUrlプロパティにアクセス
+                            alert(`Event: ${info.event.title} ${info.event.start} ${info.event.extendedProps.displayUrl}`);
+                          }
                         });
-
                         calendar.render();
                     }
                 });

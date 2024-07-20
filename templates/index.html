@@ -60,15 +60,45 @@
 
                         const calendar = new FullCalendar.Calendar(calendarEl, {
                             initialView: 'timeGridWeek',
+                            headerToolbar: {
+                                left: 'prev,next today',
+                                center: 'title',
+                                right: 'timeGridWeek,timeGridDay'
+                            },
+                            navLinks: true,
+                            editable: true,
+                            selectable: true,
+                            nowIndicator: true,
+                            weekNumbers: true,
                             events: events.map(event => ({
                                 ...event,
                                 className: event.isCancelled ? 'fc-event-cancelled' : ''
                             })),
-                            headerToolbar: {
-                                left: '',
-                                center: '',
-                                right: ''
-                            }
+                                                // 時間表示を24時間表記に変更
+                                                views: {
+                                                    timeGrid: {
+                                                        slotLabelFormat: {
+                                                            hour: '2-digit',
+                                                            minute: '2-digit',
+                                                            hour12: false
+                                                        }
+                                                    },
+                                                    week: {
+                                                        columnHeaderFormat: {
+                                                            weekday: 'short',
+                                                            day: 'numeric',
+                                                            omitCommas: true
+                                                        }
+                                                    },
+                                                    day: {
+                                                        columnHeaderFormat: {
+                                                            weekday: 'short',
+                                                            day: 'numeric',
+                                                            omitCommas: true
+                                                        }
+                                                    }
+                                                }
+
                         });
 
                         calendar.render();

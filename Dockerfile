@@ -2,8 +2,6 @@
 FROM python:3.9
 
 ENV  FLASK_RUN_PORT=5000
-ENV MS_CLIENT_ID='875b0e15-4d0d-4405-96c0-66bea63cc2a8'
-ENV MS_CLIENT_SECRET='f7O8Q~AVsyQ9K4rdgCCrKVfDGp5pCzFBqYcwkcQv'
 # Set the working directory in the container
 WORKDIR /app
 

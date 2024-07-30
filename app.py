@@ -12,6 +12,7 @@ app = Flask(__name__)
 # write microsoft Oauth
 app.secret_key = os.urandom(24)
 
+print("here is client id and secret")
 print(os.environ.get('MS_CLIENT_ID', 'can not get client id'))
 print(os.environ.get('MS_CLIENT_SECRET', 'can not get client secret'))
 # OAuthの設定

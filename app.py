@@ -94,6 +94,10 @@ def index():
 
 @app.route('/login')
 def login():
+    
+    print("here is client id and secret")
+    print(os.environ.get('MS_CLIENT_ID', 'can not get client id'))
+    print(os.environ.get('MS_CLIENT_SECRET', 'can not get client secret'))
     redirect_uri = url_for('authorized', _external=True)
     return oauth.microsoft.authorize_redirect(redirect_uri)
 

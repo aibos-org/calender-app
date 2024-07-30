@@ -159,11 +159,6 @@ def location_select():
         return redirect(url_for('login'))
     return render_template('location_select.html')
 
-@app.route('/location_select')
-def location_select():
-    if 'user' not in session:
-        return redirect(url_for('login'))
-    return render_template('location_select.html')
 
 @app.route('/get_accounts')
 def get_accounts():

@@ -5,16 +5,14 @@ import msal
 from flask import Flask, render_template, jsonify, redirect, url_for, session, request
 from authlib.integrations.flask_client import OAuth
 import os
+from concurrent.futures import ProcessPoolExecutor
+import time
 
 app = Flask(__name__)
-
 
 # write microsoft Oauth
 app.secret_key = os.urandom(24)
 
-print("here is client id and secret")
-print(os.environ.get('MS_CLIENT_ID', 'can not get client id'))
-print(os.environ.get('MS_CLIENT_SECRET', 'can not get client secret'))
 # OAuthの設定
 # OAuthの設定
 oauth = OAuth(app)
@@ -60,30 +58,15 @@ def login_required(f):
         return f(*args, **kwargs)
     return decorated_function
 
-# /locationで使用する。リストの重複を取り除く関数
-def remove_duplicates(events):
-    seen_location = set()
-    unique_events = []
-    for event in events:
-        location = event['location']
-        if location not in seen_location:
-            seen_location.add(location)
-            unique_events.append(event)
-    return unique_events
-
-
-# /locationで使用する。リストの重複を取り除く関数
-def remove_duplicates(events):
-    seen_location = set()
-    unique_events = []
-    for event in events:
-        location = event['location']
-        if location not in seen_location:
-            seen_location.add(location)
-            unique_events.append(event)
-    return unique_events
-
-
+def fetch_each_events(user_id):
+    print(user_id)
+    calendar_endpoint = f"https://graph.microsoft.com/v1.0/users/{user_id}/calendar/events"
+    calendar_data = requests.get(
+        calendar_endpoint,
+        headers={'Authorization': 'Bearer ' + result['access_token']}
+    ).json()
+    print(calendar_data)
+    return calendar_data
 
 @app.route('/')
 def index():
@@ -94,11 +77,7 @@ def index():
 
 @app.route('/login')
 def login():
-    
-    print("here is client id and secret")
-    print(os.environ.get('MS_CLIENT_ID', 'can not get client id'))
-    print(os.environ.get('MS_CLIENT_SECRET', 'can not get client secret'))
-    redirect_uri = url_for('authorized', _external=True)
+    redirect_uri = url_for('authorized', _external=True, _scheme='https')
     return oauth.microsoft.authorize_redirect(redirect_uri)
 
 @app.route('/logout')
@@ -125,30 +104,8 @@ def authorized():
         for account in users_data['value']:
             if account['mail'] == mail:
                 return redirect(url_for('ones_calendar'))
-            
-    if "access_token" in result:
-        users_endpoint = "https://graph.microsoft.com/v1.0/users"
-        users_data = requests.get(
-            users_endpoint,
-            headers={'Authorization': 'Bearer ' + result['access_token']},
-        ).json()
-        for account in users_data['value']:
-            if account['mail'] == mail:
-                return redirect(url_for('location_select'))
-            
-    if "access_token" in result:
-        users_endpoint = "https://graph.microsoft.com/v1.0/users"
-        users_data = requests.get(
-            users_endpoint,
-            headers={'Authorization': 'Bearer ' + result['access_token']},
-        ).json()
-        for account in users_data['value']:
-            if account['mail'] == mail:
-                return redirect(url_for('location_select'))
 
     return redirect(url_for('not_aibos_user'))
-
-
 
 @app.route('/not_aibos_user')
 def not_aibos_user():
@@ -159,13 +116,6 @@ def ones_calendar():
     if 'user' not in session:
         return redirect(url_for('login'))
     return render_template('ones_calendar.html')
-
-@app.route('/location_select')
-def location_select():
-    if 'user' not in session:
-        return redirect(url_for('login'))
-    return render_template('location_select.html')
-
 
 @app.route('/get_accounts')
 def get_accounts():
@@ -208,30 +158,28 @@ def get_each_calendar(user_id):
 def get_events():
     if "access_token" in result:
         users_endpoint = "https://graph.microsoft.com/v1.0/users"
-        start_date = '2024-06-20T00:00:00Z'
-        end_date = '2024-06-30T23:59:59Z' 
-        params = {
-            'startDateTime': start_date,
-            'endDateTime': end_date,
-        }
         users_data = requests.get(
             users_endpoint,
             headers={'Authorization': 'Bearer ' + result['access_token']},
         ).json()
+
+        print(users_data)
         
         all_calendar_data = []
+        users_data = []
         if "value" in users_data:
-            for user in users_data["value"]:
-                user_id = user["id"]
-                calendar_endpoint = f"https://graph.microsoft.com/v1.0/users/{user_id}/calendar/events"
-                calendar_data = requests.get(
-                    calendar_endpoint,
-                    headers={'Authorization': 'Bearer ' + result['access_token']},
-                    params=params
-                ).json()
-                for event in calendar_data.get('value', []):
-                    online_meeting = event.get("onlineMeeting")
-                    join_url = online_meeting.get("joinUrl") if online_meeting else None #会議リンクを追加,
+
+            with ProcessPoolExecutor(max_workers=10) as executor:
+                # 並列したい処理を書く
+                for user in users_data["value"]:
+                    user_id = user["id"]
+                    end = time.time()
+                    task = executor.submit(fetch_each_events, user_id)
+                    users_data.append(task)
+            print("users_data")
+            print(users_data)
+            for data in users_data:     
+                for event in data.get('value', []):
                     all_calendar_data.append({
                         "organizer": user["displayName"],
                         "title": event.get("subject"),
@@ -240,23 +188,18 @@ def get_events():
                         "description": event.get("bodyPreview"),
                         "location": event.get("location", {}).get("displayName"),
                         "organizerEmail": event.get("organizer", {}).get("emailAddress", {}).get("name"),
-                        "isCancelled": event.get("isCancelled", False) , # Get the isCancelled flag
-                        "joinURL": join_url
+                        "isCancelled": event.get("isCancelled", False)  # Get the isCancelled flag
                     })
         
         return jsonify(all_calendar_data)
     else:
         return jsonify([]), 400
-    
 
-
-
-@app.route('/location')
-def get_events_location():
+@app.route('/get_events_office')
+def get_events_office():
     if "access_token" in result:
         users_endpoint = "https://graph.microsoft.com/v1.0/users"
-        start_date = '2024-06-20T00:00:00Z'
-        start_date = '2024-06-20T00:00:00Z'
+        start_date = '2024-06-20T00:00:00Z'  # 取得開始日時
         end_date = '2024-06-30T23:59:59Z' 
         params = {
             'startDateTime': start_date,
@@ -278,22 +221,20 @@ def get_events_location():
                     params=params
                 ).json()
                 for event in calendar_data.get('value', []):
+                    if event.get("location", {}).get("displayName").find("京都") == -1:
+                        continue
                     all_calendar_data.append({
-                        # # "organizer": user["displayName"],
-                        # # "title": event.get("subject"),
-                        # # "start": event.get("start", {}).get("dateTime"),
-                        # # "end": event.get("end", {}).get("dateTime"),
-                        # # "description": event.get("bodyPreview"),
+                        "organizer": user["displayName"],
+                        "title": event.get("subject"),
+                        "start": event.get("start", {}).get("dateTime"),
+                        "end": event.get("end", {}).get("dateTime"),
+                        "description": event.get("bodyPreview"),
                         "location": event.get("location", {}).get("displayName"),
-                        # "organizerEmail": event.get("organizer", {}).get("emailAddress", {}).get("name"),
-                        # "isCancelled": event.get("isCancelled", False)  # Get the isCancelled flag
-                        # "organizerEmail": event.get("organizer", {}).get("emailAddress", {}).get("name"),
-                        # "isCancelled": event.get("isCancelled", False)  # Get the isCancelled flag
+                        "organizerEmail": event.get("organizer", {}).get("emailAddress", {}).get("name"),
+                        "isCancelled": event.get("isCancelled", False)  # Get the isCancelled flag
                     })
-        unique_calendar_data = remove_duplicates(all_calendar_data)
-        return jsonify(unique_calendar_data)
-        unique_calendar_data = remove_duplicates(all_calendar_data)
-        return jsonify(unique_calendar_data)
+        
+        return jsonify(all_calendar_data)
     else:
         return jsonify([]), 400
 

@@ -5,9 +5,10 @@ import msal
 from flask import Flask, render_template, jsonify, redirect, url_for, session, request
 from authlib.integrations.flask_client import OAuth
 import os
+from concurrent.futures import ProcessPoolExecutor
+import time
 
 app = Flask(__name__)
-
 
 # write microsoft Oauth
 app.secret_key = os.urandom(24)
@@ -57,6 +58,13 @@ def login_required(f):
         return f(*args, **kwargs)
     return decorated_function
 
+def fetch_each_events(user_id):
+    calendar_endpoint = f"https://graph.microsoft.com/v1.0/users/{user_id}/calendar/events"
+    calendar_data = requests.get(
+        calendar_endpoint,
+        headers={'Authorization': 'Bearer ' + result['access_token']}
+    ).json()
+    return calendar_data
 
 @app.route('/')
 def index():
@@ -148,30 +156,26 @@ def get_each_calendar(user_id):
 def get_events():
     if "access_token" in result:
         users_endpoint = "https://graph.microsoft.com/v1.0/users"
-        start_date = '2024-06-20T00:00:00Z'
-        end_date = '2024-06-30T23:59:59Z' 
-        params = {
-            'startDateTime': start_date,
-            'endDateTime': end_date,
-        }
         users_data = requests.get(
             users_endpoint,
             headers={'Authorization': 'Bearer ' + result['access_token']},
         ).json()
         
         all_calendar_data = []
+        users_event_data = []
         if "value" in users_data:
-            for user in users_data["value"]:
-                user_id = user["id"]
-                calendar_endpoint = f"https://graph.microsoft.com/v1.0/users/{user_id}/calendar/events"
-                calendar_data = requests.get(
-                    calendar_endpoint,
-                    headers={'Authorization': 'Bearer ' + result['access_token']},
-                    params=params
-                ).json()
-                for event in calendar_data.get('value', []):
+
+            with ProcessPoolExecutor(max_workers=30) as executor:
+                # 並列したい処理を書く
+                for user in users_data["value"]:
+                    user_id = user["id"]
+
+                    task = executor.submit(fetch_each_events, user_id)
+                    users_event_data.append(task)
+            for data in users_event_data:     
+                for event in data.result().get('value', []):
                     all_calendar_data.append({
-                        "organizer": user["displayName"],
+                        "organizer": event.get("organizer", {}).get("emailAddress", {}).get("name"),
                         "title": event.get("subject"),
                         "start": event.get("start", {}).get("dateTime"),
                         "end": event.get("end", {}).get("dateTime"),

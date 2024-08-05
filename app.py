@@ -268,7 +268,7 @@ def get_events_office(location):
 
 @app.route('/location')
 def get_events_location():
-    return jsonify(['京都事務所', '京都御所','京都リモート','Kyoto'])
+    return jsonify(['京都事務所', '東京事務所','京都リモート','東京オフィス'])
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)

@@ -23,9 +23,9 @@ oauth.register(
     name='microsoft',
     client_id=os.environ.get('MS_CLIENT_ID', 'can not get client id'),
     client_secret=os.environ.get('MS_CLIENT_SECRET', 'can not get client secret'),
-    authorize_url='https://login.microsoftonline.com/common/oauth2/v2.0/authorize',
+    authorize_url=f"https://login.microsoftonline.com/{os.environ.get('TENANT', 'common')}/oauth2/v2.0/authorize",
     authorize_params=None,
-    access_token_url='https://login.microsoftonline.com/common/oauth2/v2.0/token',
+    access_token_url="fhttps://login.microsoftonline.com/{os.environ.get('TENANT', 'common')}/oauth2/v2.0/token",
     access_token_params=None,
     refresh_token_url=None,
     client_kwargs={'scope': 'User.Read'}
@@ -65,13 +65,11 @@ def login_required(f):
     return decorated_function
 
 def fetch_each_events(user_id):
-    print(user_id)
     calendar_endpoint = f"https://graph.microsoft.com/v1.0/users/{user_id}/calendar/events"
     calendar_data = requests.get(
         calendar_endpoint,
         headers={'Authorization': 'Bearer ' + result['access_token']}
     ).json()
-    print(calendar_data)
     return calendar_data
 
 @app.route('/')
@@ -92,24 +90,9 @@ def logout():
     return redirect(url_for('login'))
 
 @app.route('/login/authorized')
-def authorized():
-    token = oauth.microsoft.authorize_access_token()
-    response = oauth.microsoft.get('https://graph.microsoft.com/v1.0/me')
-    user_info = response.json()
-    
-    session['user'] = user_info
-    mail = user_info['mail']
-    
-    
+def authorized():    
     if "access_token" in result:
-        users_endpoint = "https://graph.microsoft.com/v1.0/users"
-        users_data = requests.get(
-            users_endpoint,
-            headers={'Authorization': 'Bearer ' + result['access_token']},
-        ).json()
-        for account in users_data['value']:
-            if account['mail'] == mail:
-                return redirect(url_for('ones_calendar'))
+        return redirect(url_for('ones_calendar'))
 
     return redirect(url_for('not_aibos_user'))
 
@@ -119,9 +102,9 @@ def not_aibos_user():
 
 @app.route('/ones_calendar')
 def ones_calendar():
-    if 'user' not in session:
-        return redirect(url_for('login'))
-    return render_template('ones_calendar.html')
+    if "access_token" in result:
+        return render_template('ones_calendar.html')
+    return redirect(url_for('login'))
 
 @app.route('/get_accounts')
 def get_accounts():

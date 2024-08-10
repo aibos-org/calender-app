@@ -7,13 +7,16 @@ from authlib.integrations.flask_client import OAuth
 import os
 from concurrent.futures import ProcessPoolExecutor
 import time
+from dotenv import load_dotenv
 
 app = Flask(__name__)
 
 # write microsoft Oauth
 app.secret_key = os.urandom(24)
 
-# OAuthの設定
+load_dotenv()
+
+
 # OAuthの設定
 oauth = OAuth(app)
 oauth.register(
@@ -28,11 +31,14 @@ oauth.register(
     client_kwargs={'scope': 'User.Read'}
 )
 
-# end Oauth
-
 
 # Load configuration
-config = json.load(open("parameters.json"))
+config = {
+    "client_id":os.environ.get("MS_CLIENT_ID", 'can not get client id'),
+    "authority": os.environ.get("AUTHORITY", 'can not get authority'),
+    "secret": os.environ.get("MS_CLIENT_SECRET", 'can not get client secret'),
+    "scope": [os.environ.get("SCOPE", 'can not get scope')],  
+}
 
 # Create a preferably long-lived app instance which maintains a token cache.
 msal_app = msal.ConfidentialClientApplication(
@@ -77,7 +83,7 @@ def index():
 
 @app.route('/login')
 def login():
-    redirect_uri = url_for('authorized', _external=True, _scheme='https')
+    redirect_uri = url_for('authorized', _external=True)
     return oauth.microsoft.authorize_redirect(redirect_uri)
 
 @app.route('/logout')

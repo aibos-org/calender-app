@@ -8,6 +8,7 @@ import os
 from concurrent.futures import ProcessPoolExecutor
 import time
 from dotenv import load_dotenv
+from credential import get_parameters
 
 app = Flask(__name__)
 
@@ -16,16 +17,15 @@ app.secret_key = os.urandom(24)
 
 load_dotenv()
 
-
 # OAuthの設定
 oauth = OAuth(app)
 oauth.register(
     name='microsoft',
-    client_id=os.environ.get('MS_CLIENT_ID', 'can not get client id'),
-    client_secret=os.environ.get('MS_CLIENT_SECRET', 'can not get client secret'),
-    authorize_url=f"https://login.microsoftonline.com/{os.environ.get('TENANT', 'common')}/oauth2/v2.0/authorize",
+    client_id=get_parameters('MS_CLIENT_ID'),
+    client_secret=get_parameters('MS_CLIENT_SECRET'),
+    authorize_url=f"https://login.microsoftonline.com/{get_parameters('TENANT')}/oauth2/v2.0/authorize",
     authorize_params=None,
-    access_token_url="fhttps://login.microsoftonline.com/{os.environ.get('TENANT', 'common')}/oauth2/v2.0/token",
+    access_token_url=f"https://login.microsoftonline.com/{get_parameters('TENANT')}/oauth2/v2.0/token",
     access_token_params=None,
     refresh_token_url=None,
     client_kwargs={'scope': 'User.Read'}
@@ -34,10 +34,10 @@ oauth.register(
 
 # Load configuration
 config = {
-    "client_id":os.environ.get("MS_CLIENT_ID", 'can not get client id'),
-    "authority": os.environ.get("AUTHORITY", 'can not get authority'),
-    "secret": os.environ.get("MS_CLIENT_SECRET", 'can not get client secret'),
-    "scope": [os.environ.get("SCOPE", 'can not get scope')],  
+    "client_id":get_parameters("MS_CLIENT_ID"),
+    "authority": get_parameters("AUTHORITY"),
+    "secret": get_parameters("MS_CLIENT_SECRET"),
+    "scope": [get_parameters("SCOPE")],  
 }
 
 # Create a preferably long-lived app instance which maintains a token cache.

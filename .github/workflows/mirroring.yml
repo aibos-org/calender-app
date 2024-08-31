@@ -37,6 +37,8 @@ jobs:
           key: ${{ secrets.EC2_KEY }}
           script: |
             cd ./calendar-app 
+            git fetch
+            git pull origin deploy
             ./release_port_5000.sh
             docker rm $(docker ps -aq)
             docker build -t aibos_calender .  # Dockerイメージをビルド

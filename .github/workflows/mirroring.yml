@@ -37,6 +37,7 @@ jobs:
           key: ${{ secrets.EC2_KEY }}
           script: |
             cd ./calendar-app 
+            ./release_port_5000.sh
             docker rm $(docker ps -aq)
             docker build -t aibos_calender .  # Dockerイメージをビルド
             docker run -p 5000:5000 aibos_calender  # コンテナを実行

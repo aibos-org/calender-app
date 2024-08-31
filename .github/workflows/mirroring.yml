@@ -39,7 +39,7 @@ jobs:
             cd ./calendar-app 
             git fetch
             git pull origin deploy
-            ./release_port_5000.sh
+            docker stop $(docker ps -aq)
             docker rm $(docker ps -aq)
             docker build -t aibos_calender .  # Dockerイメージをビルド
             docker run -p 5000:5000 aibos_calender  # コンテナを実行

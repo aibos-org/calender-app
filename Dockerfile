@@ -17,5 +17,6 @@ COPY . .
 # Expose the port on which the Flask app will run
 EXPOSE 80
 
+
 # Set the entrypoint command to run the Flask app
 CMD ["python", "app.py"]

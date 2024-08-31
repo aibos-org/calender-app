@@ -8,8 +8,7 @@ CALENDAR_APP_PREFIX = '/AIBOS-CALENDAR/'
 
 def get_parameters(param_key):
     try:
-        
-        return get_parameters(param_key)
+        return aws_get_parameters(param_key)
     except:
         print("failed to get parameters from aws")
         return os.environ.get(param_key, 'can not get cledential')

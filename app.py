@@ -74,14 +74,15 @@ def fetch_each_events(user_id):
 
 @app.route('/')
 def index():
-    if 'user' not in session:
-        return redirect(url_for('login'))
-    return render_template('index.html')
+    if "access_token" in result:
+        return render_template('index.html')
+    return redirect(url_for('login'))
 
 
 @app.route('/login')
 def login():
-    redirect_uri = url_for('authorized', _external=True, _scheme='https')
+    #redirect_uri = url_for('authorized', _external=True, _scheme='https')
+    redirect_uri = url_for('authorized', _external=True)
     return oauth.microsoft.authorize_redirect(redirect_uri)
 
 @app.route('/logout')
@@ -92,8 +93,7 @@ def logout():
 @app.route('/login/authorized')
 def authorized():    
     if "access_token" in result:
-        return redirect(url_for('ones_calendar'))
-
+        return redirect(url_for('/'))
     return redirect(url_for('not_aibos_user'))
 
 @app.route('/not_aibos_user')
@@ -128,8 +128,8 @@ def get_each_calendar(user_id):
     calendar_data = requests.get(
         calendar_endpoint,
         headers={'Authorization': 'Bearer ' + result['access_token']},
-
     ).json()
+
     for event in calendar_data.get('value', []):
         all_calendar_data.append({
             "title": event.get("subject"),
@@ -159,7 +159,6 @@ def get_events():
         if "value" in users_data:
 
             with ProcessPoolExecutor(max_workers=10) as executor:
-                # 並列したい処理を書く
                 for user in users_data["value"]:
                     user_id = user["id"]
                     end = time.time()
